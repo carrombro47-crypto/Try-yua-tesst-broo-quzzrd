@@ -553,7 +553,7 @@ body {
     border-collapse: collapse;
     margin: 20px 0;
     border: 2px solid #ffd700;
-    
+
 }
 
 #result th,
@@ -764,7 +764,7 @@ body {
         padding: 3px 8px;
     }
 
-    
+
 
     .palette-item {
         width: 36px;
@@ -860,7 +860,7 @@ body {
         font-size: 14px;
     }
 
-    
+
 
     .button-container {
         flex-direction: column;
@@ -987,23 +987,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* Calculator Overlay */
-/* .calculator-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1099;
-    backdrop-filter: blur(4px);
-}
-
-.calculator-overlay.active {
-    display: block;
-} */
-
 /* Responsive Calculator */
 @media (max-width: 768px) {
     .calculator-popup {
@@ -1020,26 +1003,16 @@ body {
         height: 100%;
         border-radius: 0;
     }
-    
+
     .calculator-header {
         padding: 16px;
     }
-    
+
     #calculator-button {
         padding: 8px 12px;
         font-size: 13px;
     }
 }
-
-/* Add this to your existing header controls styles */
-.header-controls {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-    flex-wrap: wrap;
-}
-
 
 /* ===== Question Image Styles ===== */
 .question img {
@@ -1052,13 +1025,11 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Enhanced box shadow on hover */
 .question img:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
 
-/* Responsive image container */
 .question-image-container {
     position: relative;
     width: 100%;
@@ -1094,7 +1065,7 @@ body {
     background-color: #f5f5f5;
     transform: translateY(-1px);
 }
-/* Responsive breakpoints for images */
+
 @media (max-width: 768px) {
     .question img {
         max-height: 400px;
@@ -1108,28 +1079,17 @@ body {
         margin: 12px auto;
         box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
     }
-    
+
     .question img:hover {
         transform: none;
         box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
     }
 }
 
-/* Question container enhancements */
-.question {
-    background-color: #ffffff;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    margin-bottom: 24px;
-    transition: box-shadow 0.3s ease;
-}
-
 .question:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* Ensure text content is also responsive */
 .question-content {
     font-size: 16px;
     line-height: 1.6;
@@ -1140,7 +1100,7 @@ body {
     .question {
         padding: 16px;
     }
-    
+
     .question-content {
         font-size: 15px;
     }
@@ -1166,11 +1126,329 @@ body {
     }
 }
     </style>
-<style type="text/css">.eruda-search-highlight-block{display:inline}.eruda-search-highlight-block .eruda-keyword{background:#fffbe5;color:#5c5c00}</style><style type="text/css">@font-face{font-family:eruda-icon;src:url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff')}[class*=' eruda-icon-'],[class^='eruda-icon-']{display:inline-block;font-family:eruda-icon!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.eruda-icon-arrow-left:before{content:'\f101'}.eruda-icon-arrow-right:before{content:'\f102'}.eruda-icon-caret-down:before{content:'\f103'}.eruda-icon-caret-right:before{content:'\f104'}.eruda-icon-clear:before{content:'\f105'}.eruda-icon-compress:before{content:'\f106'}.eruda-icon-copy:before{content:'\f107'}.eruda-icon-delete:before{content:'\f108'}.eruda-icon-error:before{content:'\f109'}.eruda-icon-expand:before{content:'\f10a'}.eruda-icon-eye:before{content:'\f10b'}.eruda-icon-filter:before{content:'\f10c'}.eruda-icon-play:before{content:'\f10d'}.eruda-icon-record:before{content:'\f10e'}.eruda-icon-refresh:before{content:'\f10f'}.eruda-icon-reset:before{content:'\f110'}.eruda-icon-search:before{content:'\f111'}.eruda-icon-select:before{content:'\f112'}.eruda-icon-tool:before{content:'\f113'}.eruda-icon-warn:before{content:'\f114'}@font-face{font-family:luna-console-icon;src:url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff')}[class*=' luna-console-icon-'],[class^=luna-console-icon-]{display:inline-block;font-family:luna-console-icon!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.luna-console-icon-caret-down:before{content:'\f101'}.luna-console-icon-caret-right:before{content:'\f102'}.luna-console-icon-warn:before{content:'\f103'}.luna-console-icon-error:before{content:'\f104'}.luna-console-icon-input:before{content:'\f105'}.luna-console-icon-output:before{content:'\f106'}.luna-console{background:#fff;overflow-y:auto;-webkit-overflow-scrolling:touch;height:100%;position:relative;will-change:scroll-position;cursor:default;font-size:12px;font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace}.luna-console.luna-console-theme-dark{background-color:#141414}.luna-console-hidden{display:none}.luna-console-fake-logs{position:absolute;left:0;top:0;pointer-events:none;visibility:hidden;width:100%}.luna-console-logs{padding-top:1px;position:absolute;width:100%}.luna-console-log-container{box-sizing:content-box}.luna-console-log-container.luna-console-selected .luna-console-log-item{background:#ecf1f8}.luna-console-log-container.luna-console-selected .luna-console-log-item:not(.luna-console-error):not(.luna-console-warn){border-color:#ccdef5}.luna-console-header{white-space:nowrap;display:flex;font-size:11px;color:#545454;border-top:1px solid transparent;border-bottom:1px solid #ccc}.luna-console-header .luna-console-time-from-container{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:3px 10px}.luna-console-nesting-level{width:14px;flex-shrink:0;margin-top:-1px;margin-bottom:-1px;position:relative;border-right:1px solid #ccc}.luna-console-nesting-level.luna-console-group-closed::before{content:""}.luna-console-nesting-level::before{border-bottom:1px solid #ccc;position:absolute;top:0;left:0;margin-left:100%;width:5px;height:100%;box-sizing:border-box}.luna-console-log-item{position:relative;display:flex;border-top:1px solid transparent;border-bottom:1px solid #ccc;margin-top:-1px;color:#333}.luna-console-log-item:after{content:"";display:block;clear:both}.luna-console-log-item .luna-console-code{display:inline;font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace}.luna-console-log-item .luna-console-code .luna-console-keyword{color:#881280}.luna-console-log-item .luna-console-code .luna-console-number{color:#1c00cf}.luna-console-log-item .luna-console-code .luna-console-operator{color:gray}.luna-console-log-item .luna-console-code .luna-console-comment{color:#236e25}.luna-console-log-item .luna-console-code .luna-console-string{color:#1a1aa6}.luna-console-log-item a{color:#15c!important}.luna-console-log-item .luna-console-icon-container{margin:0 -6px 0 10px}.luna-console-log-item .luna-console-icon-container .luna-console-icon{line-height:20px;font-size:12px;color:#333;position:relative}.luna-console-log-item .luna-console-icon-container .luna-console-icon-caret-down,.luna-console-log-item .luna-console-icon-container .luna-console-icon-caret-right{top:0;left:-2px}.luna-console-log-item .luna-console-icon-container .luna-console-icon-error{top:0;color:#ef3842}.luna-console-log-item .luna-console-icon-container .luna-console-icon-warn{top:0;color:#e8a400}.luna-console-log-item .luna-console-count{background:#8097bd;color:#fff;padding:2px 4px;border-radius:10px;font-size:12px;float:left;margin:1px -6px 0 10px}.luna-console-log-item .luna-console-log-content-wrapper{flex:1;overflow:hidden}.luna-console-log-item .luna-console-log-content{padding:3px 0;margin:0 10px;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:pre-wrap;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}.luna-console-log-item .luna-console-log-content *{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}.luna-console-log-item .luna-console-log-content>*{vertical-align:top}.luna-console-log-item .luna-console-log-content .luna-console-null,.luna-console-log-item .luna-console-log-content .luna-console-undefined{color:#5e5e5e}.luna-console-log-item .luna-console-log-content .luna-console-number{color:#1c00cf}.luna-console-log-item .luna-console-log-content .luna-console-boolean{color:#0d22aa}.luna-console-log-item .luna-console-log-content .luna-console-regexp,.luna-console-log-item .luna-console-log-content .luna-console-symbol{color:#881391}.luna-console-log-item .luna-console-data-grid,.luna-console-log-item .luna-console-dom-viewer{white-space:initial}.luna-console-log-item.luna-console-error{z-index:50;background:#fff0f0;color:red;border-top:1px solid #ffd6d6;border-bottom:1px solid #ffd6d6}.luna-console-log-item.luna-console-error .luna-console-stack{padding-left:1.2em;white-space:nowrap}.luna-console-log-item.luna-console-error .luna-console-count{background:red}.luna-console-log-item.luna-console-debug{z-index:20}.luna-console-log-item.luna-console-input{border-bottom-color:transparent}.luna-console-log-item.luna-console-warn{z-index:40;color:#5c5c00;background:#fffbe5;border-top:1px solid #fff5c2;border-bottom:1px solid #fff5c2}.luna-console-log-item.luna-console-warn .luna-console-count{background:#e8a400}.luna-console-log-item.luna-console-info{z-index:30}.luna-console-log-item.luna-console-group,.luna-console-log-item.luna-console-groupCollapsed{font-weight:700}.luna-console-preview{display:inline-block}.luna-console-preview .luna-console-preview-container{display:flex;align-items:center}.luna-console-preview .luna-console-json{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-left:12px}.luna-console-preview .luna-console-preview-icon-container{display:block}.luna-console-preview .luna-console-preview-icon-container .luna-console-icon{position:relative;font-size:12px}.luna-console-preview .luna-console-preview-icon-container .luna-console-icon-caret-down{top:2px}.luna-console-preview .luna-console-preview-icon-container .luna-console-icon-caret-right{top:1px}.luna-console-preview .luna-console-preview-content-container{word-break:break-all}.luna-console-preview .luna-console-descriptor,.luna-console-preview .luna-console-object-preview{font-style:italic}.luna-console-preview .luna-console-key{color:#881391}.luna-console-preview .luna-console-number{color:#1c00cf}.luna-console-preview .luna-console-null{color:#5e5e5e}.luna-console-preview .luna-console-string{color:#c41a16}.luna-console-preview .luna-console-boolean{color:#0d22aa}.luna-console-preview .luna-console-special{color:#5e5e5e}.luna-console-theme-dark{color-scheme:dark}.luna-console-theme-dark .luna-console-log-container.luna-console-selected .luna-console-log-item{background:#29323d}.luna-console-theme-dark .luna-console-log-container.luna-console-selected .luna-console-log-item:not(.luna-console-error):not(.luna-console-warn){border-color:#4173b4}.luna-console-theme-dark .luna-console-log-item{color:#a5a5a5;border-bottom-color:#3d3d3d}.luna-console-theme-dark .luna-console-log-item .luna-console-code .luna-console-keyword{color:#e36eec}.luna-console-theme-dark .luna-console-log-item .luna-console-code .luna-console-number{color:#9980ff}.luna-console-theme-dark .luna-console-log-item .luna-console-code .luna-console-operator{color:#7f7f7f}.luna-console-theme-dark .luna-console-log-item .luna-console-code .luna-console-comment{color:#747474}.luna-console-theme-dark .luna-console-log-item .luna-console-code .luna-console-string{color:#f29766}.luna-console-theme-dark .luna-console-log-item.luna-console-error{background:#290000;color:#ff8080;border-top-color:#5c0000;border-bottom-color:#5c0000}.luna-console-theme-dark .luna-console-log-item.luna-console-error .luna-console-count{background:#ff8080}.luna-console-theme-dark .luna-console-log-item.luna-console-warn{color:#ffcb6b;background:#332a00;border-top-color:#650;border-bottom-color:#650}.luna-console-theme-dark .luna-console-log-item .luna-console-count{background:#42597f;color:#949494}.luna-console-theme-dark .luna-console-log-item .luna-console-log-content .luna-console-null,.luna-console-theme-dark .luna-console-log-item .luna-console-log-content .luna-console-undefined{color:#7f7f7f}.luna-console-theme-dark .luna-console-log-item .luna-console-log-content .luna-console-boolean,.luna-console-theme-dark .luna-console-log-item .luna-console-log-content .luna-console-number{color:#9980ff}.luna-console-theme-dark .luna-console-log-item .luna-console-log-content .luna-console-regexp,.luna-console-theme-dark .luna-console-log-item .luna-console-log-content .luna-console-symbol{color:#e36eec}.luna-console-theme-dark .luna-console-icon-container .luna-console-icon-caret-down,.luna-console-theme-dark .luna-console-icon-container .luna-console-icon-caret-right{color:#9aa0a6}.luna-console-theme-dark .luna-console-header{border-bottom-color:#3d3d3d}.luna-console-theme-dark .luna-console-nesting-level{border-right-color:#3d3d3d}.luna-console-theme-dark .luna-console-nesting-level::before{border-bottom-color:#3d3d3d}.luna-console-theme-dark .luna-console-preview .luna-console-key{color:#e36eec}.luna-console-theme-dark .luna-console-preview .luna-console-number{color:#9980ff}.luna-console-theme-dark .luna-console-preview .luna-console-null{color:#7f7f7f}.luna-console-theme-dark .luna-console-preview .luna-console-string{color:#f29766}.luna-console-theme-dark .luna-console-preview .luna-console-boolean{color:#9980ff}.luna-console-theme-dark .luna-console-preview .luna-console-special{color:#7f7f7f}@font-face{font-family:luna-object-viewer-icon;src:url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAS8AAsAAAAAB7QAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAAGEAAACMISgl+k9TLzIAAAFsAAAAPQAAAFZLxUkWY21hcAAAAawAAADWAAACdBU42qdnbHlmAAAChAAAAC4AAAAwabU7V2hlYWQAAAK0AAAALwAAADZzjr4faGhlYQAAAuQAAAAYAAAAJAFyANlobXR4AAAC/AAAABAAAABAAZAAAGxvY2EAAAMMAAAAEAAAACIAtACobWF4cAAAAxwAAAAfAAAAIAEbAA9uYW1lAAADPAAAASkAAAIWm5e+CnBvc3QAAARoAAAAUwAAAHZW8MNZeJxNjTsOQFAQRc/z/+sV1mABohKV0gZeJRJR2X9cT4RJZu7nFIMBMjoGvHGaF6rdngcNAc/c/O/Nvq2W5E1igdNE2zv1iGh1c5FQPlYXUlJRyxt9+/pUKadQa/AveGEGZQAAAHicY2BkkGScwMDKwMBQx9ADJGWgdAIDJ4MxAwMTAyszA1YQkOaawnCAQfcjE8MJIFcITDIwMIIIAFqDCGkAAAB4nM2STQ4BQRCFv54ZP8MwFhYW4gQcShBsSERi50BWDuFCcwJedddKRGKnOt8k9aanqudVAy0gF3NRQLgTsLhJDVHP6UW94Kp8zEhKwYIlG/YcOXHm0mTPp96aumLLwdUQ1fcIqmJrwpSZL+iqak5JmyE1Ayr1bdGhr/2ZPmp/qPQtuj/uJzqQl+pfDyypesQD6AT/ElV8PjyrMccT9rdLR3PUFBI227VTio1jbm6dodg5VnPvmAsHxzofHfmi+Sbs/pwdWcXFkWdNSNg9arIE2QufuSCyAAB4nGNgZACBlQzTGZgYGMyVxVc2O073AIpAxHsYloHFRc2dPZY2OTIwAACmEQesAAB4nGNgZGBgAOINe2b6x/PbfGXgZjgBFIjifLyvAUEDwUqGZUCSg4EJxAEAUn4LLAB4nGNgZGBgOMHAACdXMjAyoAIBADizAkx4nGNgAIITUEwGAABZUAGReJxjYAACHgYJ3BAAE94BXXicY2BkYGAQYGBmANEMDExAzAWEDAz/wXwGAApcASsAeJxlkD1uwkAUhMdgSAJSghQpKbNVCiKZn5IDQE9Bl8KYtTGyvdZ6QaLLCXKEHCGniHKCHChj82hgLT9/M2/e7soABviFh3p5uG1qvVq4oTpxm/Qg7JOfhTvo40W4S38o3MMbpsJ9POKdO3j+HZ0BSuEW7vEh3Kb/KeyTv4Q7eMK3cJf+j3APK/wJ9/HqDdPIFLEp3FIn+yy0Z3n+rrStUlOoSTA+WwtdaBs6vVHro6oOydS5WMXW5GrOrs4yo0prdjpywda5cjYaxeIHkcmRIoJBgbipDktoJNgjQwh71b3UK6YtKvq1VpggwPgqtWCqaJIhlcaGyTWOrBUOPG1K1zGt+FrO5KS5zGreJCMr/u+6t6MT0Q+wbaZKzDDiE1/kg+YO+T89EV6oAAAAeJxdxjkOgCAUANE/uOOGB+FQBIjaaEJIuL6FsfE1M6Lk9fXPoKioaWjp6BnQjEzMLKwYNtHepZhtuMs1vpvO/ch4HIlIxhK4KVyc7BwiD8nvDlkA') format('woff')}[class*=' luna-object-viewer-icon-'],[class^=luna-object-viewer-icon-]{display:inline-block;font-family:luna-object-viewer-icon!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.luna-object-viewer-icon-caret-down:before{content:'\f101'}.luna-object-viewer-icon-caret-right:before{content:'\f102'}.luna-object-viewer{overflow-x:auto;-webkit-overflow-scrolling:touch;overflow-y:hidden;cursor:default;font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;font-size:12px;line-height:1.2;min-height:100%;color:#333;list-style:none!important}.luna-object-viewer ul{list-style:none!important;padding:0!important;padding-left:12px!important;margin:0!important}.luna-object-viewer li{position:relative;white-space:nowrap;line-height:16px;min-height:16px}.luna-object-viewer>li>.luna-object-viewer-key{display:none}.luna-object-viewer span{position:static!important}.luna-object-viewer li .luna-object-viewer-collapsed~.luna-object-viewer-close:before{color:#999}.luna-object-viewer-array .luna-object-viewer-object .luna-object-viewer-key{display:inline}.luna-object-viewer-null{color:#5e5e5e}.luna-object-viewer-regexp,.luna-object-viewer-string{color:#c41a16}.luna-object-viewer-number{color:#1c00cf}.luna-object-viewer-boolean{color:#0d22aa}.luna-object-viewer-special{color:#5e5e5e}.luna-object-viewer-key,.luna-object-viewer-key-lighter{color:#881391}.luna-object-viewer-key-lighter{opacity:.6}.luna-object-viewer-key-special{color:#5e5e5e}.luna-object-viewer-collapsed .luna-object-viewer-icon,.luna-object-viewer-expanded .luna-object-viewer-icon{position:absolute!important;left:-12px;color:#727272;font-size:12px}.luna-object-viewer-icon-caret-right{top:0}.luna-object-viewer-icon-caret-down{top:1px}.luna-object-viewer-expanded>.luna-object-viewer-icon-caret-down{display:inline}.luna-object-viewer-expanded>.luna-object-viewer-icon-caret-right{display:none}.luna-object-viewer-collapsed>.luna-object-viewer-icon-caret-down{display:none}.luna-object-viewer-collapsed>.luna-object-viewer-icon-caret-right{display:inline}.luna-object-viewer-hidden~ul{display:none}.luna-object-viewer-theme-dark{color:#fff}.luna-object-viewer-theme-dark .luna-object-viewer-null,.luna-object-viewer-theme-dark .luna-object-viewer-special{color:#a1a1a1}.luna-object-viewer-theme-dark .luna-object-viewer-regexp,.luna-object-viewer-theme-dark .luna-object-viewer-string{color:#f28b54}.luna-object-viewer-theme-dark .luna-object-viewer-boolean,.luna-object-viewer-theme-dark .luna-object-viewer-number{color:#9980ff}.luna-object-viewer-theme-dark .luna-object-viewer-key,.luna-object-viewer-theme-dark .luna-object-viewer-key-lighter{color:#5db0d7}@font-face{font-family:luna-dom-viewer-icon;src:url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAS8AAsAAAAAB7QAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAAGEAAACMISgl+k9TLzIAAAFsAAAAPQAAAFZLxUkWY21hcAAAAawAAADWAAACdBU42qdnbHlmAAAChAAAAC4AAAAwabU7V2hlYWQAAAK0AAAALwAAADZzjr4faGhlYQAAAuQAAAAYAAAAJAFyANlobXR4AAAC/AAAABAAAABAAZAAAGxvY2EAAAMMAAAAEAAAACIAtACobWF4cAAAAxwAAAAfAAAAIAEbAA9uYW1lAAADPAAAASkAAAIWm5e+CnBvc3QAAARoAAAAUwAAAHZW8MNZeJxNjTsOQFAQRc/z/+sV1mABohKV0gZeJRJR2X9cT4RJZu7nFIMBMjoGvHGaF6rdngcNAc/c/O/Nvq2W5E1igdNE2zv1iGh1c5FQPlYXUlJRyxt9+/pUKadQa/AveGEGZQAAAHicY2BkkGScwMDKwMBQx9ADJGWgdAIDJ4MxAwMTAyszA1YQkOaawnCAQfcjE8MJIFcITDIwMIIIAFqDCGkAAAB4nM2STQ4BQRCFv54ZP8MwFhYW4gQcShBsSERi50BWDuFCcwJedddKRGKnOt8k9aanqudVAy0gF3NRQLgTsLhJDVHP6UW94Kp8zEhKwYIlG/YcOXHm0mTPp96aumLLwdUQ1fcIqmJrwpSZL+iqak5JmyE1Ayr1bdGhr/2ZPmp/qPQtuj/uJzqQl+pfDyypesQD6AT/ElV8PjyrMccT9rdLR3PUFBI227VTio1jbm6dodg5VnPvmAsHxzofHfmi+Sbs/pwdWcXFkWdNSNg9arIE2QufuSCyAAB4nGNgZACBlQzTGZgYGMyVxVc2O073AIpAxHsYloHFRc2dPZY2OTIwAACmEQesAAB4nGNgZGBgAOINe2b6x/PbfGXgZjgBFIjifLyvAUEDwUqGZUCSg4EJxAEAUn4LLAB4nGNgZGBgOMHAACdXMjAyoAIBADizAkx4nGNgAIITUEwGAABZUAGReJxjYAACHgYJ3BAAE94BXXicY2BkYGAQYGBmANEMDExAzAWEDAz/wXwGAApcASsAeJxlkD1uwkAUhMdgSAJSghQpKbNVCiKZn5IDQE9Bl8KYtTGyvdZ6QaLLCXKEHCGniHKCHChj82hgLT9/M2/e7soABviFh3p5uG1qvVq4oTpxm/Qg7JOfhTvo40W4S38o3MMbpsJ9POKdO3j+HZ0BSuEW7vEh3Kb/KeyTv4Q7eMK3cJf+j3APK/wJ9/HqDdPIFLEp3FIn+yy0Z3n+rrStUlOoSTA+WwtdaBs6vVHro6oOydS5WMXW5GrOrs4yo0prdjpywda5cjYaxeIHkcmRIoJBgbipDktoJNgjQwh71b3UK6YtKvq1VpggwPgqtWCqaJIhlcaGyTWOrBUOPG1K1zGt+FrO5KS5zGreJCMr/u+6t6MT0Q+wbaZKzDDiE1/kg+YO+T89EV6oAAAAeJxdxjkOgCAUANE/uOOGB+FQBIjaaEJIuL6FsfE1M6Lk9fXPoKioaWjp6BnQjEzMLKwYNtHepZhtuMs1vpvO/ch4HIlIxhK4KVyc7BwiD8nvDlkA') format('woff')}[class*=' luna-dom-viewer-icon-'],[class^=luna-dom-viewer-icon-]{display:inline-block;font-family:luna-dom-viewer-icon!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.luna-dom-viewer-icon-caret-down:before{content:'\f101'}.luna-dom-viewer-icon-caret-right:before{content:'\f102'}.luna-dom-viewer{padding:0 0 0 12px;cursor:default;list-style:none;min-width:100%;color:rgba(0,0,0,.88);color:var(--luna-color-text,rgba(0,0,0,.88));background-color:rgba(0,0,0,0);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-family:var(--luna-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-size:14px}.luna-dom-viewer .luna-dom-viewer-hidden,.luna-dom-viewer.luna-dom-viewer-hidden{display:none}.luna-dom-viewer .luna-dom-viewer-invisible,.luna-dom-viewer.luna-dom-viewer-invisible{visibility:hidden}.luna-dom-viewer *{box-sizing:border-box}.luna-dom-viewer.luna-dom-viewer-theme-dark{color-scheme:dark;color:hsla(0,0%,100%,.85);color:var(--luna-color-text-dark,rgba(255,255,255,.85));background-color:rgba(0,0,0,0)}.luna-dom-viewer{font-size:12px;font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace}.luna-dom-viewer ul{display:inline-block}.luna-dom-viewer-toggle{min-width:12px;margin-left:-12px}.luna-dom-viewer-icon-caret-down,.luna-dom-viewer-icon-caret-right{position:absolute!important;font-size:12px!important}.luna-dom-viewer-tree-item{min-width:200px;line-height:16px;min-height:16px;position:relative;z-index:10;outline:0}.luna-dom-viewer-tree-item.luna-dom-viewer-selected .luna-dom-viewer-selection,.luna-dom-viewer-tree-item:hover .luna-dom-viewer-selection{display:block}.luna-dom-viewer-tree-item .luna-dom-viewer-icon-caret-down{display:none}.luna-dom-viewer-tree-item.luna-dom-viewer-expanded .luna-dom-viewer-icon-caret-down{display:inline-block}.luna-dom-viewer-tree-item.luna-dom-viewer-expanded .luna-dom-viewer-icon-caret-right{display:none}.luna-dom-viewer-attribute-value{word-break:break-all}.luna-dom-viewer-attribute-value.luna-dom-viewer-attribute-underline{text-decoration:underline}.luna-dom-viewer-selection{position:absolute;display:none;left:-10000px;right:0;top:0;bottom:0;z-index:-1}.luna-dom-viewer-children{margin:0;overflow-x:visible;overflow-y:visible;padding-left:15px}.luna-dom-viewer-theme-light .luna-dom-viewer-icon-caret-down,.luna-dom-viewer-theme-light .luna-dom-viewer-icon-caret-right{color:#9aa0a6}.luna-dom-viewer-theme-light .luna-dom-viewer-html-tag,.luna-dom-viewer-theme-light .luna-dom-viewer-tag-name{color:#881280}.luna-dom-viewer-theme-light .luna-dom-viewer-attribute-name{color:#994500}.luna-dom-viewer-theme-light .luna-dom-viewer-attribute-value{color:#1a1aa6}.luna-dom-viewer-theme-light .luna-dom-viewer-html-comment{color:#236e25}.luna-dom-viewer-theme-light .luna-dom-viewer-tree-item:hover .luna-dom-viewer-selection{background:#e8eaed}.luna-dom-viewer-theme-light .luna-dom-viewer-tree-item.luna-dom-viewer-selected .luna-dom-viewer-selection{background:#e0e0e0}.luna-dom-viewer-theme-light .luna-dom-viewer-tree-item.luna-dom-viewer-selected:focus .luna-dom-viewer-selection{background:#cfe8fc}.luna-dom-viewer-theme-light .luna-dom-viewer-text-node{word-break:break-all}.luna-dom-viewer-theme-light .luna-dom-viewer-text-node .luna-dom-viewer-keyword{color:#881280}.luna-dom-viewer-theme-light .luna-dom-viewer-text-node .luna-dom-viewer-number{color:#1c00cf}.luna-dom-viewer-theme-light .luna-dom-viewer-text-node .luna-dom-viewer-operator{color:gray}.luna-dom-viewer-theme-light .luna-dom-viewer-text-node .luna-dom-viewer-comment{color:#236e25}.luna-dom-viewer-theme-light .luna-dom-viewer-text-node .luna-dom-viewer-string{color:#1a1aa6}.luna-dom-viewer-theme-dark{color:#e8eaed}.luna-dom-viewer-theme-dark .luna-dom-viewer-icon-caret-down,.luna-dom-viewer-theme-dark .luna-dom-viewer-icon-caret-right{color:#9aa0a6}.luna-dom-viewer-theme-dark .luna-dom-viewer-html-tag,.luna-dom-viewer-theme-dark .luna-dom-viewer-tag-name{color:#5db0d7}.luna-dom-viewer-theme-dark .luna-dom-viewer-attribute-name{color:#9bbbdc}.luna-dom-viewer-theme-dark .luna-dom-viewer-attribute-value{color:#f29766}.luna-dom-viewer-theme-dark .luna-dom-viewer-html-comment{color:#898989}.luna-dom-viewer-theme-dark .luna-dom-viewer-tree-item:hover .luna-dom-viewer-selection{background:#083c69}.luna-dom-viewer-theme-dark .luna-dom-viewer-tree-item.luna-dom-viewer-selected .luna-dom-viewer-selection{background:#454545}.luna-dom-viewer-theme-dark .luna-dom-viewer-tree-item.luna-dom-viewer-selected:focus .luna-dom-viewer-selection{background:#073d69}.luna-dom-viewer-theme-dark .luna-dom-viewer-text-node{word-break:break-all}.luna-dom-viewer-theme-dark .luna-dom-viewer-text-node .luna-dom-viewer-keyword{color:#e36eec}.luna-dom-viewer-theme-dark .luna-dom-viewer-text-node .luna-dom-viewer-number{color:#9980ff}.luna-dom-viewer-theme-dark .luna-dom-viewer-text-node .luna-dom-viewer-operator{color:#7f7f7f}.luna-dom-viewer-theme-dark .luna-dom-viewer-text-node .luna-dom-viewer-comment{color:#747474}.luna-dom-viewer-theme-dark .luna-dom-viewer-text-node .luna-dom-viewer-string{color:#f29766}@font-face{font-family:luna-text-viewer-icon;src:url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAS0AAsAAAAAB2QAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAAFQAAAB0INElr09TLzIAAAFcAAAAPQAAAFZL+0klY21hcAAAAZwAAACfAAACEAEewxRnbHlmAAACPAAAAIYAAACkNSDggmhlYWQAAALEAAAALgAAADZzrb4oaGhlYQAAAvQAAAAWAAAAJAGRANNobXR4AAADDAAAABAAAAAoAZAAAGxvY2EAAAMcAAAAEAAAABYBWgFIbWF4cAAAAywAAAAdAAAAIAEXADtuYW1lAAADTAAAASkAAAIWm5e+CnBvc3QAAAR4AAAAOwAAAFJIWdOleJxjYGRgYOBiMGCwY2BycfMJYeDLSSzJY5BiYGGAAJA8MpsxJzM9kYEDxgPKsYBpDiBWAdNMDGwMQkAWK1CGlYEZyGMCstiBMpxAUUYGZgDbGgXDeJxjYGTQYJzAwMrAwFDH0AMkZaB0AgMngzEDAxMDKzMDVhCQ5prCcIAh+SMTwwkgVwhMMjAwgggAY84IrgAAAHicvZFLCsMwDERHzsdJ6aL0HD1VQiDQRbIN9Axd9aI+QTpjq5Bdd5F4Bo1lybIBNAAq8iA1YB8YZG+qlvUKl6zXGBjf6MofMWHGEyu2FPb9oCxULCtHs3yy+J2urg1rtojo0HM/MKnFGabOGlbdYvdT+1N6/7drXl8e6Vajo3efHP3b7HAUvntBMy1OJKujMTeHNZMV9McpFBC+tLgY4QB4nGNgZACBEwzrGdgZGOwZxdnVDdXNPfKEGlhchO0KhZtZ3IQYmMFq1jCsZpBi0GLQY2AwNzGzZjQSk2UUYdNmVFID8UyVRUXYlNRMlVGlTM1FjU3tmZkTmVhYmFRBhHwoCyuzKgtTIjMzWJg3ZClIGMRlZQmVB7GhMixM0aGhQIsB52sTqgAAeJxjYGRgYADi2JNxkvH8Nl8ZuBlOAAWiOB/va0DQQHCCYT2Q5GBgAnEANJ0KnQAAeJxjYGRgYDjBwIBEMjKgAi4AOvoCZQAAeJxjYACCE1CMBwAAM7gBkXicY2AAAiGGIFQIABXIAqN4nGNgZGBg4GLQZ2BmAAEmMI8LSP4H8xkADjQBUwAAAHicZZA9bsJAFITHYEgCUoIUKSmzVQoimZ+SA0BPQZfCmLUxsr3WekGiywlyhBwhp4hyghwoY/NoYC0/fzNv3u7KAAb4hYd6ebhtar1auKE6cZv0IOyTn4U76ONFuEt/KNzDG6bCfTzinTt4/h2dAUrhFu7xIdym/ynsk7+EO3jCt3CX/o9wDyv8Cffx6g3TyBSxKdxSJ/sstGd5/q60rVJTqEkwPlsLXWgbOr1R66OqDsnUuVjF1uRqzq7OMqNKa3Y6csHWuXI2GsXiB5HJkSKCQYG4qQ5LaCTYI0MIe9W91CumLSr6tVaYIMD4KrVgqmiSIZXGhsk1jqwVDjxtStcxrfhazuSkucxq3iQjK/7vurejE9EPsG2mSsww4hNf5IPmDvk/PRFeqAAAAHicXcU7CsAgFEXBe4x/l/kQBAtt3X0KSZNpRk7X91/F8eAJRBKZQqUp2Og2va19MAadyWJzpBd4kgcWAA==') format('woff')}[class*=' luna-text-viewer-icon-'],[class^=luna-text-viewer-icon-]{display:inline-block;font-family:luna-text-viewer-icon!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.luna-text-viewer-icon-check:before{content:'\f101'}.luna-text-viewer-icon-copy:before{content:'\f102'}.luna-text-viewer{color:#333;background-color:#fff;font-family:Arial,Helvetica,sans-serif;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-size:14px;padding:0;unicode-bidi:embed;position:relative;overflow:auto;border:1px solid #ccc}.luna-text-viewer.luna-text-viewer-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-text-viewer.luna-text-viewer-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-text-viewer .luna-text-viewer-hidden,.luna-text-viewer.luna-text-viewer-hidden{display:none}.luna-text-viewer .luna-text-viewer-invisible,.luna-text-viewer.luna-text-viewer-invisible{visibility:hidden}.luna-text-viewer *{box-sizing:border-box}.luna-text-viewer.luna-text-viewer-theme-dark{color:#d9d9d9;border-color:#3d3d3d;background:#242424}.luna-text-viewer:hover .luna-text-viewer-copy{opacity:1}.luna-text-viewer-table{display:table}.luna-text-viewer-table .luna-text-viewer-line-number,.luna-text-viewer-table .luna-text-viewer-line-text{padding:0}.luna-text-viewer-table-row{display:table-row}.luna-text-viewer-line-number{display:table-cell;padding:0 3px 0 8px!important;text-align:right;vertical-align:top;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border-right:1px solid #ccc}.luna-text-viewer-line-text{display:table-cell;padding-left:4px!important;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}.luna-text-viewer-copy{background:#fff;opacity:0;position:absolute;right:5px;top:5px;border:1px solid #ccc;border-radius:4px;width:25px;height:25px;text-align:center;line-height:25px;cursor:pointer;transition:opacity .3s,top .3s}.luna-text-viewer-copy .luna-text-viewer-icon-check{color:#188037}.luna-text-viewer-text{padding:4px;font-size:12px;font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;box-sizing:border-box;white-space:pre;display:block}.luna-text-viewer-text.luna-text-viewer-line-numbers{padding:0}.luna-text-viewer-text.luna-text-viewer-wrap-long-lines{white-space:pre-wrap}.luna-text-viewer-text.luna-text-viewer-wrap-long-lines .luna-text-viewer-line-text{word-break:break-all}.luna-text-viewer-theme-dark{color-scheme:dark}.luna-text-viewer-theme-dark .luna-text-viewer-copy,.luna-text-viewer-theme-dark .luna-text-viewer-line-number{border-color:#3d3d3d}.luna-text-viewer-theme-dark .luna-text-viewer-copy .luna-text-viewer-icon-check{color:#81c995}.luna-text-viewer-theme-dark .luna-text-viewer-copy{background-color:#242424}@font-face{font-family:luna-notification-icon;src:url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff')}[class*=' luna-notification-icon-'],[class^=luna-notification-icon-]{display:inline-block;font-family:luna-notification-icon!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.luna-notification-icon-info:before{content:'\f101'}.luna-notification-icon-check:before{content:'\f102'}.luna-notification-icon-warn:before{content:'\f103'}.luna-notification-icon-error:before{content:'\f104'}.luna-notification{position:relative;padding:20px;pointer-events:none;display:flex;flex-direction:column;overflow:hidden;color:rgba(0,0,0,.88);color:var(--luna-color-text,rgba(0,0,0,.88));background-color:rgba(0,0,0,0);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-family:var(--luna-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-size:14px}.luna-notification .luna-notification-hidden,.luna-notification.luna-notification-hidden{display:none}.luna-notification .luna-notification-invisible,.luna-notification.luna-notification-invisible{visibility:hidden}.luna-notification *{box-sizing:border-box}.luna-notification.luna-notification-theme-dark{color-scheme:dark;color:hsla(0,0%,100%,.85);color:var(--luna-color-text-dark,rgba(255,255,255,.85));background-color:rgba(0,0,0,0)}.luna-notification.luna-notification-full{position:fixed;top:0;left:0;width:100%;height:100%}.luna-notification-item{display:flex;border:1px solid;padding:10px 16px;align-items:center}.luna-notification-lower{margin-top:16px}.luna-notification-upper{margin-bottom:16px}.luna-notification-icon-container{margin-right:8px;color:#fff;border-radius:50%;width:16px;height:16px;text-align:center;line-height:16px}.luna-notification-icon-container.luna-notification-info .luna-notification-icon{position:relative;top:-2px;font-size:12px}.luna-notification-icon-container.luna-notification-success .luna-notification-icon{position:relative;top:-1px;font-size:12px}.luna-notification-icon-container.luna-notification-warning{position:relative;top:-2px}.luna-notification-icon-container.luna-notification-warning .luna-notification-icon{font-size:14px}.luna-notification-icon-container.luna-notification-error{position:relative;top:-1px}.luna-notification-icon-container.luna-notification-error .luna-notification-icon{font-size:14px}.luna-notification-theme-light .luna-notification-item{border-color:#d9d9d9;border-color:var(--luna-color-border,#d9d9d9);box-shadow:0 6px 16px 0 rgba(0,0,0,.08),0 3px 6px -4px rgba(0,0,0,.12),0 9px 28px 8px rgba(0,0,0,.05);box-shadow:var(--luna-box-shadow,0 6px 16px 0 rgba(0,0,0,.08),0 3px 6px -4px rgba(0,0,0,.12),0 9px 28px 8px rgba(0,0,0,.05));color:rgba(0,0,0,.88);color:var(--luna-color-text,rgba(0,0,0,.88));background-color:#fff;background-color:var(--luna-color-bg-container,#fff)}.luna-notification-theme-light .luna-notification-icon-container.luna-notification-info{background-color:#1677ff;background-color:var(--luna-color-info,#1677ff)}.luna-notification-theme-light .luna-notification-icon-container.luna-notification-success{background-color:#52c41a;background-color:var(--luna-color-success,#52c41a)}.luna-notification-theme-light .luna-notification-icon-container.luna-notification-warning{color:#faad14;color:var(--luna-color-warning,#faad14)}.luna-notification-theme-light .luna-notification-icon-container.luna-notification-error{color:#ff4d4f;color:var(--luna-color-error,#ff4d4f)}.luna-notification-theme-dark .luna-notification-item{border-color:#424242;border-color:var(--luna-color-border,#424242);box-shadow:0 6px 16px 0 rgba(0,0,0,.08),0 3px 6px -4px rgba(0,0,0,.12),0 9px 28px 8px rgba(0,0,0,.05);box-shadow:var(--luna-box-shadow,0 6px 16px 0 rgba(0,0,0,.08),0 3px 6px -4px rgba(0,0,0,.12),0 9px 28px 8px rgba(0,0,0,.05));color:hsla(0,0%,100%,.85);color:var(--luna-color-text,rgba(255,255,255,.85));background-color:#141414;background-color:var(--luna-color-bg-container,#141414)}.luna-notification-theme-dark .luna-notification-icon-container.luna-notification-info{background-color:#1668dc;background-color:var(--luna-color-info,#1668dc)}.luna-notification-theme-dark .luna-notification-icon-container.luna-notification-success{background-color:#49aa19;background-color:var(--luna-color-success,#49aa19)}.luna-notification-theme-dark .luna-notification-icon-container.luna-notification-warning{color:#d89614;color:var(--luna-color-warning,#d89614)}.luna-notification-theme-dark .luna-notification-icon-container.luna-notification-error{color:#dc4446;color:var(--luna-color-error,#dc4446)}</style></head>
+</head>
 <body>
-        
+
+<!-- ===== CBT MODE: Right-side hardware-style keypad ===== -->
+<style>
+  #cbt-keypad {
+    position: fixed;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    width: 128px;
+    max-height: 92vh;
+    overflow-y: auto;
+    background: linear-gradient(180deg,#20263a,#151a28);
+    border: 1px solid #323b52;
+    color: #e9ecf5;
+    border-radius: 14px;
+    padding: 12px 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    z-index: 2000;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  #cbt-keypad.active { display: flex; }
+  #cbt-keypad .cbt-qnum {
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    color: #9fb0e0;
+    letter-spacing: 0.5px;
+  }
+  .cbt-scrollpad {
+    height: 100px;
+    border-radius: 10px;
+    background: linear-gradient(180deg,#2c3450,#181d2c);
+    border: 1px solid #3a4568;
+    position: relative;
+    cursor: ns-resize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    touch-action: none;
+  }
+  .cbt-scrollpad .cbt-arrow { font-size: 12px; color: #7c88ad; line-height: 1; }
+  .cbt-scrollpad .cbt-thumb {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #6d8bff, #3b57d6);
+    box-shadow: 0 2px 8px rgba(59,87,214,0.6);
+  }
+  .cbt-scrollpad-label {
+    font-size: 9px; text-align: center; color: #6d7a9e; margin-top: -4px;
+  }
+  .cbt-options-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .cbt-opt-btn {
+    aspect-ratio: 1;
+    border-radius: 8px;
+    border: 2px solid #3a4568;
+    background: #232a40;
+    color: #e9ecf5;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .15s ease;
+  }
+  .cbt-opt-btn:hover { border-color: #4c6ef5; }
+  .cbt-opt-btn.selected {
+    background: #1b7a3a; border-color: #1b7a3a; color: #fff;
+  }
+  .cbt-int-pad { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
+  .cbt-actions { display: flex; flex-direction: column; gap: 6px; }
+  .cbt-actions button {
+    padding: 9px 4px; font-size: 11px; border-radius: 7px; border: none;
+    cursor: pointer; font-weight: 700; letter-spacing: 0.2px; color: #fff;
+  }
+  #cbt-mark { background: #8e24aa; }
+  #cbt-mark.active-flag { background: #ffb300; color: #201a00; }
+  #cbt-clear { background: #55617e; }
+  #cbt-save { background: #1976d2; }
+  #cbt-prev { background: #37415c; }
+  #cbt-palette { background: #2f3a54; }
+  #cbt-submit-test { background: #c62828; }
+
+  /* Lock direct touch/click selection of options - CBT mode uses keypad only */
+  .options input[type="radio"],
+  .options input[type="checkbox"] { pointer-events: none !important; }
+  .options label { pointer-events: none !important; cursor: default !important; }
+
+  .option-img {
+    max-width: 100%;
+    max-height: 220px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+
+  @media (max-width: 900px) {
+    #cbt-keypad {
+      top: auto; bottom: 8px; right: 8px; left: 8px; transform: none;
+      width: auto; max-height: 40vh; flex-direction: row; flex-wrap: wrap;
+      align-items: center; justify-content: space-between; padding: 8px;
+    }
+    #cbt-keypad .cbt-qnum { width: 100%; }
+    .cbt-scrollpad { width: 60px; height: 60px; }
+    .cbt-options-row { flex: 1; }
+    .cbt-actions { flex-direction: row; flex-wrap: wrap; flex: 1 1 100%; }
+    .cbt-actions button { flex: 1 1 30%; }
+  }
+</style>
+
+<div id="cbt-keypad">
+  <div class="cbt-qnum" id="cbt-qnum">Q1</div>
+  <div class="cbt-scrollpad" id="cbt-scrollpad" title="Drag up/down to scroll the page">
+    <span class="cbt-arrow">&#9650;</span>
+    <span class="cbt-thumb"></span>
+    <span class="cbt-arrow">&#9660;</span>
+  </div>
+  <div class="cbt-scrollpad-label">Drag to scroll</div>
+  <div id="cbt-options-container"></div>
+  <div class="cbt-actions">
+    <button type="button" id="cbt-mark" onclick="cbtMarkForReviewAndNext()">Mark &amp; Next</button>
+    <button type="button" id="cbt-clear" onclick="cbtClearResponse()">Clear</button>
+    <button type="button" id="cbt-save" onclick="submitQuiz()">Save &amp; Next</button>
+    <button type="button" id="cbt-prev" onclick="goToPreviousQuestion()">Previous</button>
+    <button type="button" id="cbt-palette" onclick="toggleQuestionPalette()">Index</button>
+    <button type="button" id="cbt-submit-test" onclick="cbtSubmitTest()">Submit Test</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  function initScrollpad() {
+    var pad = document.getElementById('cbt-scrollpad');
+    if (!pad || pad.dataset.bound) return;
+    pad.dataset.bound = "1";
+    var dragging = false, lastY = 0;
+
+    function start(e) {
+      dragging = true;
+      lastY = (e.touches ? e.touches[0].clientY : e.clientY);
+      e.preventDefault();
+    }
+    function move(e) {
+      if (!dragging) return;
+      var y = (e.touches ? e.touches[0].clientY : e.clientY);
+      var delta = y - lastY;
+      window.scrollBy(0, delta * 3);
+      lastY = y;
+      e.preventDefault();
+    }
+    function stop() { dragging = false; }
+
+    pad.addEventListener('mousedown', start);
+    pad.addEventListener('touchstart', start, { passive: false });
+    document.addEventListener('mousemove', move, { passive: false });
+    document.addEventListener('touchmove', move, { passive: false });
+    document.addEventListener('mouseup', stop);
+    document.addEventListener('touchend', stop);
+
+    pad.addEventListener('wheel', function (e) {
+      window.scrollBy(0, e.deltaY);
+    }, { passive: true });
+  }
+
+  // Hard-block direct touch/click selection on options - keypad only (real CBT behaviour)
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (t && t.closest && t.closest('.options')) {
+      if (t.tagName === 'LABEL' || t.tagName === 'INPUT') {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }
+  }, true);
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollpad);
+  } else {
+    initScrollpad();
+  }
+})();
+
+function renderOptionContent(opt) {
+  if (typeof opt !== 'string') return opt;
+  var val = opt.trim();
+  if (val.toLowerCase().indexOf('<img') === 0) return val;
+  if (/\.(png|jpe?g|gif|webp)(\?.*)?$/i.test(val) || /^https?:\/\//i.test(val) && /\.(png|jpe?g|gif|webp)/i.test(val)) {
+    return '<img src="' + val + '" class="option-img" alt="option">';
+  }
+  return val;
+}
+
+function updateKeypad() {
+  var kp = document.getElementById('cbt-keypad');
+  if (!kp) return;
+  var question = questions[currentQuestion];
+  if (!question) { kp.classList.remove('active'); return; }
+
+  document.getElementById('cbt-qnum').textContent = 'Q' + (currentQuestion + 1) + '/' + questions.length;
+
+  var labels = ['A', 'B', 'C', 'D', 'E', 'F'];
+  var html = '';
+  if (question.type === 'mcq' || question.type === 'multi') {
+    html += '<div class="cbt-options-row">';
+    for (var i = 0; i < question.options.length; i++) {
+      var sel = false;
+      if (question.type === 'mcq') {
+        sel = (question.userAnswer !== null && question.userAnswer === i);
+      } else {
+        sel = !!(question.userAnswer && question.userAnswer.includes(i));
+      }
+      html += '<button type="button" class="cbt-opt-btn' + (sel ? ' selected' : '') + '" onclick="selectOptionViaKeypad(' + i + ')">' + labels[i] + '</button>';
+    }
+    html += '</div>';
+  } else if (question.type === 'integer') {
+    html += '<div class="cbt-int-pad">';
+    for (var d = 1; d <= 9; d++) {
+      html += '<button type="button" class="cbt-opt-btn" onclick="keypadTypeDigit(\'' + d + '\')">' + d + '</button>';
+    }
+    html += '<button type="button" class="cbt-opt-btn" onclick="keypadTypeDigit(\'-\')">-</button>';
+    html += '<button type="button" class="cbt-opt-btn" onclick="keypadTypeDigit(\'0\')">0</button>';
+    html += '<button type="button" class="cbt-opt-btn" onclick="keypadBackspace()">&#9003;</button>';
+    html += '</div>';
+  }
+  document.getElementById('cbt-options-container').innerHTML = html;
+
+  var markBtn = document.getElementById('cbt-mark');
+  if (markBtn) markBtn.classList.toggle('active-flag', !!question.markedForReview);
+
+  var prevBtn = document.getElementById('cbt-prev');
+  if (prevBtn) prevBtn.style.visibility = (currentQuestion > 0) ? 'visible' : 'hidden';
+}
+
+function selectOptionViaKeypad(i) {
+  var question = questions[currentQuestion];
+  if (!question) return;
+  var input = document.getElementById('option_' + i);
+  if (!input) return;
+  if (question.type === 'mcq') {
+    input.checked = true;
+  } else if (question.type === 'multi') {
+    input.checked = !input.checked;
+  }
+  updateKeypad();
+}
+
+function keypadTypeDigit(d) {
+  var inp = document.getElementById('integer-answer');
+  if (!inp) return;
+  if (d === '-') {
+    inp.value = inp.value.charAt(0) === '-' ? inp.value.slice(1) : '-' + inp.value;
+  } else {
+    inp.value = (inp.value || '') + d;
+  }
+}
+
+function keypadBackspace() {
+  var inp = document.getElementById('integer-answer');
+  if (!inp) return;
+  inp.value = inp.value.slice(0, -1);
+}
+
+function cbtClearResponse() {
+  var question = questions[currentQuestion];
+  if (!question) return;
+  question.userAnswer = null;
+  question.skipped = true;
+  var inputs = document.querySelectorAll('input[name="option"]');
+  inputs.forEach(function (inp) { inp.checked = false; });
+  var inti = document.getElementById('integer-answer');
+  if (inti) inti.value = '';
+  updateKeypad();
+}
+
+function cbtMarkForReviewAndNext() {
+  var question = questions[currentQuestion];
+  if (!question) return;
+
+  if (question.type === 'mcq') {
+    var sel = document.querySelector('input[name="option"]:checked');
+    if (sel) question.userAnswer = parseInt(sel.value);
+  } else if (question.type === 'multi') {
+    var sels = document.querySelectorAll('input[name="option"]:checked');
+    if (sels.length) question.userAnswer = Array.from(sels).map(function (s) { return parseInt(s.value); });
+  } else if (question.type === 'integer') {
+    var inti = document.getElementById('integer-answer');
+    if (inti && inti.value !== '') question.userAnswer = inti.value;
+  }
+
+  question.markedForReview = true;
+  question.visited = true;
+  question.skipped = false;
+  if (typeof getTimeTakenInSeconds === 'function') {
+    question.timeTaken = getTimeTakenInSeconds();
+  }
+
+  if (currentQuestion < questions.length - 1) {
+    currentQuestion++;
+    displayQuestion();
+  } else {
+    alert("This was the last Question of the Test");
+  }
+}
+
+function cbtSubmitTest() {
+  var btn = document.querySelector('#quizForm button[type="submit"]');
+  if (btn) { btn.click(); }
+}
+</script>
+<!-- ===== END CBT MODE keypad ===== -->
+
   <div id="quiz">
-    <center>   
+    <center>
       <div id="instruction" style="display: none;">
         <h3 style="color:red;"> Some Instructions</h3>
         <li>Question marked for review will be in Yellow</li>
@@ -1183,57 +1461,51 @@ body {
         <label for="timer-minutes">Set Timer (minutes): </label>
         <input type="number" id="timer-minutes" min="1" max="180" value="180">
       </div>
-    </div> 
+    </div>
     </center>
     <div id="timer" style="font-size: 20px; font-weight: bold;">03:00:00</div>
-    <div id="question-container" style="display: block;"><div class="question"><div class="header-controls"><button id="question-palette-button" onclick="toggleQuestionPalette()">Show Index</button><i id="flag-icon" class="fas fa-flag" onclick="toggleReviewFlag()" style="color: gray;"></i></div><div class="question-info-bar"><span class="question-number">Question 1</span><span class="section-info">Physics</span><div class="marks-box"><span class="correct-marks">+4</span><span class="wrong-marks">-1</span></div><span class="question-type">MCQ</span></div><br><img src="https://static.pw.live/5b09189f7285894d9130ccd0/af2c72ad-b6e0-403c-aada-e5384569bd2e.png" class="igg"></div><div class="options"><div class="option-container"><input type="radio" id="option_0" name="option" value="0"><label for="option_0">A</label></div><div class="option-container"><input type="radio" id="option_1" name="option" value="1"><label for="option_1">B</label></div><div class="option-container"><input type="radio" id="option_2" name="option" value="2"><label for="option_2">C</label></div><div class="option-container"><input type="radio" id="option_3" name="option" value="3"><label for="option_3">D</label></div></div><div class="button-container"><button id="submit-btn" onclick="submitQuiz()">Save &amp; Next</button><button id="skip-btn" onclick="skipQuestion()">Skip</button></div></div>
+    <div id="question-container" style="display: block;"></div>
     <br>
-    <center><form id="quizForm" method="POST" action="/submit-quiz">  
-          <input type="hidden" name="questions" id="questionsInput">   
-             <button id="submit-btn" style="display: block;" type="submit">Submit TesT</button> 
+    <center><form id="quizForm" method="POST" action="/submit-quiz">
+          <input type="hidden" name="questions" id="questionsInput">
+             <button id="submit-btn" style="display: block;" type="submit">Submit TesT</button>
                </form></center>
-    
-    <div id="optt" style="display: inline-block;">
 
-   
+    <div id="optt" style="display: inline-block;"></div>
+    <div class="question-palette hidden" id="questionPalette" style="display: none;"></div>
+    </div>
 
-    
-    </div>
-    <div class="question-palette hidden" id="questionPalette" style="display: none;"><button class="togleqboxbtn" onclick="toggleQuestionPalette()"><b>Close Index </b></button><div class="section-container"><div class="section-header"><p class="palette-item section">Physics</p></div><div class="question-buttons"><button class="palette-item current">1</button><button class="palette-item">2</button><button class="palette-item">3</button><button class="palette-item">4</button><button class="palette-item">5</button><button class="palette-item">6</button><button class="palette-item">7</button><button class="palette-item">8</button><button class="palette-item">9</button><button class="palette-item">10</button><button class="palette-item">11</button><button class="palette-item">12</button><button class="palette-item">13</button><button class="palette-item">14</button><button class="palette-item">15</button><button class="palette-item">16</button><button class="palette-item">17</button><button class="palette-item">18</button><button class="palette-item">19</button><button class="palette-item">20</button><button class="palette-item">21</button><button class="palette-item">22</button><button class="palette-item">23</button><button class="palette-item">24</button><button class="palette-item">25</button><button class="palette-item">26</button><button class="palette-item">27</button><button class="palette-item">28</button><button class="palette-item">29</button><button class="palette-item">30</button><button class="palette-item">31</button><button class="palette-item">32</button><button class="palette-item">33</button><button class="palette-item">34</button><button class="palette-item">35</button><button class="palette-item">36</button><button class="palette-item">37</button><button class="palette-item">38</button><button class="palette-item">39</button><button class="palette-item">40</button><button class="palette-item">41</button><button class="palette-item">42</button><button class="palette-item">43</button><button class="palette-item">44</button><button class="palette-item">45</button></div><div class="section-header"><p class="palette-item section">Chemistry</p></div><div class="question-buttons"><button class="palette-item">46</button><button class="palette-item">47</button><button class="palette-item">48</button><button class="palette-item">49</button><button class="palette-item">50</button><button class="palette-item">51</button><button class="palette-item">52</button><button class="palette-item">53</button><button class="palette-item">54</button><button class="palette-item">55</button><button class="palette-item">56</button><button class="palette-item">57</button><button class="palette-item">58</button><button class="palette-item">59</button><button class="palette-item">60</button><button class="palette-item">61</button><button class="palette-item">62</button><button class="palette-item">63</button><button class="palette-item">64</button><button class="palette-item">65</button><button class="palette-item">66</button><button class="palette-item">67</button><button class="palette-item">68</button><button class="palette-item">69</button><button class="palette-item">70</button><button class="palette-item">71</button><button class="palette-item">72</button><button class="palette-item">73</button><button class="palette-item">74</button><button class="palette-item">75</button><button class="palette-item">76</button><button class="palette-item">77</button><button class="palette-item">78</button><button class="palette-item">79</button><button class="palette-item">80</button><button class="palette-item">81</button><button class="palette-item">82</button><button class="palette-item">83</button><button class="palette-item">84</button><button class="palette-item">85</button><button class="palette-item">86</button><button class="palette-item">87</button><button class="palette-item">88</button><button class="palette-item">89</button><button class="palette-item">90</button></div><div class="section-header"><p class="palette-item section">Botany</p></div><div class="question-buttons"><button class="palette-item">91</button><button class="palette-item">92</button><button class="palette-item">93</button><button class="palette-item">94</button><button class="palette-item">95</button><button class="palette-item">96</button><button class="palette-item">97</button><button class="palette-item">98</button><button class="palette-item">99</button><button class="palette-item">100</button><button class="palette-item">101</button><button class="palette-item">102</button><button class="palette-item">103</button><button class="palette-item">104</button><button class="palette-item">105</button><button class="palette-item">106</button><button class="palette-item">107</button><button class="palette-item">108</button><button class="palette-item">109</button><button class="palette-item">110</button><button class="palette-item">111</button><button class="palette-item">112</button><button class="palette-item">113</button><button class="palette-item">114</button><button class="palette-item">115</button><button class="palette-item">116</button><button class="palette-item">117</button><button class="palette-item">118</button><button class="palette-item">119</button><button class="palette-item">120</button><button class="palette-item">121</button><button class="palette-item">122</button><button class="palette-item">123</button><button class="palette-item">124</button><button class="palette-item">125</button><button class="palette-item">126</button><button class="palette-item">127</button><button class="palette-item">128</button><button class="palette-item">129</button><button class="palette-item">130</button><button class="palette-item">131</button><button class="palette-item">132</button><button class="palette-item">133</button><button class="palette-item">134</button><button class="palette-item">135</button></div><div class="section-header"><p class="palette-item section">Zoology</p></div><div class="question-buttons"><button class="palette-item">136</button><button class="palette-item">137</button><button class="palette-item">138</button><button class="palette-item">139</button><button class="palette-item">140</button><button class="palette-item">141</button><button class="palette-item">142</button><button class="palette-item">143</button><button class="palette-item">144</button><button class="palette-item">145</button><button class="palette-item">146</button><button class="palette-item">147</button><button class="palette-item">148</button><button class="palette-item">149</button><button class="palette-item">150</button><button class="palette-item">151</button><button class="palette-item">152</button><button class="palette-item">153</button><button class="palette-item">154</button><button class="palette-item">155</button><button class="palette-item">156</button><button class="palette-item">157</button><button class="palette-item">158</button><button class="palette-item">159</button><button class="palette-item">160</button><button class="palette-item">161</button><button class="palette-item">162</button><button class="palette-item">163</button><button class="palette-item">164</button><button class="palette-item">165</button><button class="palette-item">166</button><button class="palette-item">167</button><button class="palette-item">168</button><button class="palette-item">169</button><button class="palette-item">170</button><button class="palette-item">171</button><button class="palette-item">172</button><button class="palette-item">173</button><button class="palette-item">174</button><button class="palette-item">175</button><button class="palette-item">176</button><button class="palette-item">177</button><button class="palette-item">178</button><button class="palette-item">179</button><button class="palette-item">180</button></div></div></div>
-    </div>
-  
     <div id="result" style="display: none;"></div>
       <div class="qdiv" id="qpbox" style="display: block;">
-     
+
         <div id="overlay"></div>
         <div id="loading">
             <div class="spinner"></div>
             Generating result...
         </div>
-  
-  
-  <script type="text/javascript">  
-      window.onload = function () {  
-          document.onkeydown = function (e) {  
-              return (e.which || e.keyCode) != 116;  
-          };  
-      }  
-    
-    
+
+
+  <script type="text/javascript">
+      window.onload = function () {
+          document.onkeydown = function (e) {
+              return (e.which || e.keyCode) != 116;
+          };
+      }
+
+
    window.onbeforeunload = confirmExit;
-  
+
       function confirmExit() {
           return "ARE YOU SURE TO EXIT QUIZ ??? <BR> YOUR ANSWERS WILL NOT BE SAVED !!! ";
       }
 
-    </script> 
-  
+    </script>
+
   <script>
     // Add this script at the end of your HTML file
 document.addEventListener('DOMContentLoaded', function() {
     // Create calculator elements
     const calculatorHTML = `
-        <!-- <div class="calculator-overlay"></div> -->
         <div class="calculator-popup">
             <div class="calculator-header">
                 <div class="calculator-title">Scientific Calculator</div>
@@ -1248,7 +1520,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const calculatorPopup = document.querySelector('.calculator-popup');
     const calculatorHeader = document.querySelector('.calculator-header');
     const closeButton = document.querySelector('.close-calculator');
-    //const overlay = document.querySelector('.calculator-overlay');
 
     // Dragging functionality
     let isDragging = false;
@@ -1327,45 +1598,41 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.classList.remove('active');
     });
 });
- 
-     let questions = [{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/af2c72ad-b6e0-403c-aada-e5384569bd2e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/12f8f928-5ecc-41b0-bea9-54f367465a62.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b44f0577-47f9-439e-8ea8-a12a233e1aea.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/48eb050a-85c5-4958-9cce-ccfc70138d3a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/0c32e0af-bf64-419c-bfbd-5a33063deb4b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/61a54bab-557b-4116-bbc8-b96048a8d25f.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/f2b6e80c-5545-496f-bc02-a43e2c629b74.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/37a4aa4e-cb3f-448d-8e23-6128dafda4de.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7f2d2f62-4a62-40fa-a5e1-b2608e7f4562.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2a388539-e32f-4f5f-844b-c57fb07da1a7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/8e58b590-a8ab-483c-9a95-ab0cd9f0f281.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/281d3cfc-6de0-41dc-becc-745f07eb20b2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/d09dbf99-6bc0-4ada-9642-458b9250f652.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/42a69357-e1fe-450f-bbc1-4a495cceb724.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a7b9a836-3283-4fdf-827b-0376575c659c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2f5e9bb4-87a3-4ab5-bdf2-a5b5f7dd90bf.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a9da5417-d4c0-45a0-a47a-db7ff490eac9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/136ad376-bb94-4a13-9c21-ebdc19d85868.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/751bfb20-856b-4bc2-9210-b4167a60714c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e5acec2c-8529-4726-b284-4080d2645522.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/eaf0752f-df19-4007-9981-7a706572932b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b4f6f5c8-d442-4e25-bcf9-94b1bc52bef9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/25297305-2a2a-49b4-8182-4a825ddb2f5e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c9f7b8b4-6d75-418e-86ab-6a0836791e29.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/d974c6af-45e6-4224-8a94-8e12402dc2c0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ad9ee284-db40-4ac4-bc6a-a7859abff6d1.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bd404173-ec9c-40af-a70c-85186bb80d2d.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e6b78eab-1765-41ec-8f66-d9ea19f43fb7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c1fb6e3e-d735-43fa-90a5-bb043cb3c261.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/73721fb5-b3fd-4a8d-bd9d-2ac1fe3553f1.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1a89d458-619b-40c6-b176-db845fc81a8a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/35337460-92f4-4974-987e-d15a8bbbb76c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/695027d2-97b8-4c64-b2eb-8d20480fbd9c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/fd43f5ef-92ba-4efc-a371-60336616caf0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5454d379-76ff-46e9-b424-201e06abfa83.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c608f492-196e-4a9c-9dd7-e5e6ac415752.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1d79cc82-cf89-448c-b975-0f8bac114ae0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ce312659-7f92-4ae2-b750-8c1373ee208b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/397e9293-261c-4689-9b1b-82ede72c7514.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bc170296-8939-44b3-b304-afe14b32cb84.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1566af34-ef78-4985-a3a0-138646106f13.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a430b18e-2c09-4dc7-8e8a-098a083f3c4f.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4fd85b0f-1552-4462-adfb-6f4c7488c991.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7f672427-769c-4f34-96d2-c20c005bf455.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/37be0eff-db47-4fb0-b50a-d615572c7266.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/76062f9d-4840-4da3-bc52-690e7ee7c05c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4c211206-6012-4786-bfcf-163207678c15.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a1f20337-edcf-401d-beb8-4058a4dc1a9a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2c5e1074-06b5-44b5-92ea-571262c65d48.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5c027729-9af0-4109-af19-6b4ef6dfabe5.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/25b87ff3-879e-4ee8-b7d5-c6a729cdc5ef.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/186c9c1a-ee7b-40c5-9d95-20a82785a383.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/153810dc-f99b-4bb0-8017-3bd5cc46b1f7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/16cfd34f-62d7-4ce3-b02a-6f1a1cdc040f.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/41b9f268-82b5-442b-a4fe-9d9a554bee1b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5ae98901-ca31-47f2-bdfc-53fee26db758.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c7d7436f-cc84-49d5-9dcc-42af0e156b3c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5702b54b-136c-411b-982b-c617c09f69bd.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/26cdc7a9-ad61-484a-890b-a9befe17b3f2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/3d1d8666-9c0d-44c7-a400-bc24a6d2c215.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/8c0c5fcd-5366-45a6-a433-a9b2239563a9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/6dbf1dfb-dc4a-4d64-a3e7-94edd79223bb.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4d96979b-9e44-4d31-a33f-96b52da0543e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bcef3b1f-cd43-4ebe-87f7-d911f3159399.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/709900f4-e83c-40b6-b464-d27a652d5b18.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/582042d6-f780-4a80-9416-5d74f6020de8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/68673f1f-68a3-4e3d-b12e-6522b871da5d.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/d154afb2-ee1f-4448-aa42-bac3bafc15bf.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/6ca24c95-21d7-4559-b9fc-f4382608a311.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2ff61e76-fd66-4b98-b24e-93fd276e526c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b0b9f350-ae7b-4afb-9954-cac1f9690460.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/42b57e59-b488-498c-84d9-9f11ef2d4612.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5c0c3b86-a30c-4d3a-b453-76be077f279b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/769a6c7e-ca79-49e1-810c-2706a9978b5b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7da70c14-35f2-4638-9175-c3c6f54784fc.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5edd1a94-4c5d-4548-a64c-98e3934643db.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/fc16b9ac-4475-49b0-b6de-3472382a7dda.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/da1b552c-2743-4c83-9587-3976bfca4056.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a464e89d-32af-4118-a63b-3b84a6b57e20.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5ed2bbc9-0edb-4722-86f5-f6063b98b8d4.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2c95f282-2974-421a-81d5-fca7b8ccc6f7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/01f9243d-1be4-4544-8739-8b87faa54d86.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5e862cf9-d6c5-4835-acfc-b320091db17f.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/76cb87f0-e7ac-40a4-9837-822b042e42ea.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1f7596f7-d443-446d-ab0d-7a9257486a28.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/051d09c0-22af-40de-afe3-032432c9a21a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/835df86e-3c75-4509-95ee-298b72c09ed7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4650be7c-144b-427b-9aa9-e36938a253d8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c88aa2cc-668b-4784-9b42-7c874c083cdf.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/784e9ae9-ff27-4c50-8a07-72af281e3781.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7c8ef7a7-fa06-4c78-b7a4-01d84d082115.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/72c1b5fc-afb3-4a0c-9a09-693aed6d3fa7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e2e4f43f-8675-473c-8130-781afc653473.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ea1ca227-bb6f-40b7-967c-9390608d7cbb.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/367c160c-0794-458f-ba74-69e514d05e32.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/470e3f4d-62ed-4d1a-99dc-8f5f8c15b40c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/84f3a172-2533-4386-ae5c-185987432d2a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/73506b87-d278-4848-99a7-7ff256322c02.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7c495da3-0fa4-47bb-b0d9-b60615fe5933.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/6650cf1c-c267-4585-bc41-c1c5ae7f3c7b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/8f5340b4-544f-4e54-8cb7-34544a52b7d2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/f2eda1c1-639a-4bb6-b181-f373197e4f99.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/20d37ab2-cff7-41d6-bb2a-a97b9520e40c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b13e4e3f-5fa6-4c35-a79a-a3dc6caeb167.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bb504593-3297-4980-bfbc-0531821f746e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2d989f41-319e-47d7-81a2-fd7fc3a7e522.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/40c5e93e-09cf-4981-8deb-55ea4a6561ba.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/173d79d8-20a4-46a2-86a7-423358809763.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/0a5f2624-280a-4d5d-92e5-ce7b56ba5717.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/44bda520-ab79-49e2-8085-a45bc114e333.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e1edb7a6-7e8b-4b0a-81ff-d16b29584a11.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/934facc9-0a68-4bd8-b0a2-af8d677b4251.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/8094dfc4-4156-4e31-aaf5-4d9865095d3b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/3c7d1b2d-467f-4dcb-b9bd-3594ddb9e2ae.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/259e01ee-3862-4af4-ba52-cdce36c8135a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4868d1a7-0ac6-4517-9da3-f42e5073f9fa.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ce487c1b-6b98-4ae8-8b04-43f18e168322.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/49461ead-30f1-4640-825e-2110eb80910c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/091843bd-15b4-40cf-ac74-4161ad50440c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ac99ba34-230d-49a6-89c7-ccb29fb821d7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ae91c580-0486-46ac-a051-1f9df7519607.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b40bab3b-9b66-4d25-91bc-a15bf12c8fea.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c2e22194-f739-4a44-adba-1dc16c422cc8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/baa784e2-36c0-4dbc-96c9-77dc152c95aa.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/53f3f2f3-92a2-4d85-8474-78d7b2af3c13.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b8c87263-16c1-4feb-ade9-62ddcfebb4c2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/359f3579-e2b7-4c55-8354-0697353878f3.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/511b64ba-ae7f-425b-ae6e-65b43dfc87ad.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/417a3bc0-b3e9-41b4-bfcc-223eac92812e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7c4aab2c-092b-4c78-9ef5-0b358072a3b0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c99cd3d6-5de5-44e2-beee-41976255ab5e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/eb500336-6129-4373-9e4d-b4f6fbb84cdb.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/f4581c25-4833-487b-9982-c50fed2a0ae9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/0d5056ae-5177-4993-9fd9-f95d9daaf426.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bc8bc7b8-b4b5-40da-8f37-2c8022e86945.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2e7b8467-e764-4f29-86c9-bfe8e553a1a9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4e056ea0-cb09-4153-848a-cbcaafaf86e4.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/fb18e69a-6117-4df1-9298-ffa6d1242eae.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b289406a-50b7-48b9-b31d-55f723242a37.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bffa4f6a-cf2b-4c84-afde-8bb2a1073a48.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/93fdd8f1-1e75-4003-bf7c-71d0a87f44bf.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b80562ec-fa9a-4e0a-b3e7-333f9596d9df.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/92943665-b184-4c97-aed6-552231ae279c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1fd93f92-bcf7-4415-b44b-864952a4f366.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/07d76d02-ad94-4788-a2ca-90078400ddf0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1ba4da22-2060-4e78-8dcd-00e0b476908b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2f8b3861-a800-46c9-a712-7438ec809dcc.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7cd1c581-0ae7-4725-b360-cf24b31f38a5.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5da73ea2-4aa1-43ba-bc12-abde88d7641d.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/76c2867a-e9f5-42e2-850f-aac1422a08f3.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/d2442a32-c064-4ab2-b9d3-a4b60346b119.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/cd6637cd-ebc8-49f1-ab31-c5a1009bce98.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/3b8fc2b9-7c8b-4671-88cd-ac7509f4b8ef.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c7f9f867-b408-48ae-a730-881d921b834a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5a3fd741-4f30-4dee-828f-6db6b1238b74.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2d415fcb-4e7e-47c7-91d5-1ff286085ada.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a31672f2-8154-4f12-81b9-ea062c8ad7f1.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b8782a31-0a4f-42c7-a4bd-bc7f4d2b99c8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5c6ff8a9-1847-46f2-bf84-12f50d5e026a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e892bf9a-58bc-4090-9d58-d37f1cf22a5a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e757b6e9-c751-4c28-8733-12e950733612.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4a2ab36e-537d-4f4b-ab69-a90299902809.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/6ea98e27-6435-42b6-9fb7-47fc805f29a1.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/de29b41a-fbf5-484b-8d65-a99eeecc3dde.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b526e548-d111-4b0b-a370-1db0cc872376.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/36d1de72-1a22-4c4c-99dd-81592a24288b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7b4a9872-a09d-4001-82cd-dd6162356a71.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/34979e0f-d461-4ed8-b590-fc321f6cddd2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/24598cdb-57c8-481e-b4a7-889ed89faaea.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/16c15ad9-42eb-45b0-9b17-cf8dbbd3ba4a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2ee072ce-ff4b-4d12-a56b-30b08f82af46.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e88d3632-f29c-4428-a98c-a9d075eb0044.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/11741fd2-7f12-4a0f-b0e4-c77f348893ca.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/20936c39-462a-4003-acd0-0f18593df24c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e0fb670f-c7bf-4179-87e0-cca0006e9ee8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1380cbdd-c4ea-4a53-8ed2-5e7a5a73c939.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c84ec7ad-6bc6-4ca9-914b-8f3f879874d4.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7f9d3e91-67a8-4335-93f6-91590bf3cac6.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/17c9fc99-d25e-4cea-9827-78a3c0470665.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e24ba826-fc23-4e3a-8cc0-58cde0eee4d9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}}];
-    
+
+     let questions = [{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/af2c72ad-b6e0-403c-aada-e5384569bd2e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/12f8f928-5ecc-41b0-bea9-54f367465a62.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b44f0577-47f9-439e-8ea8-a12a233e1aea.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/48eb050a-85c5-4958-9cce-ccfc70138d3a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/0c32e0af-bf64-419c-bfbd-5a33063deb4b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/61a54bab-557b-4116-bbc8-b96048a8d25f.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/f2b6e80c-5545-496f-bc02-a43e2c629b74.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/37a4aa4e-cb3f-448d-8e23-6128dafda4de.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7f2d2f62-4a62-40fa-a5e1-b2608e7f4562.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/fd43f5ef-92ba-4efc-a371-60336616caf0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5454d379-76ff-46e9-b424-201e06abfa83.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c608f492-196e-4a9c-9dd7-e5e6ac415752.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1d79cc82-cf89-448c-b975-0f8bac114ae0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ce312659-7f92-4ae2-b750-8c1373ee208b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/397e9293-261c-4689-9b1b-82ede72c7514.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bc170296-8939-44b3-b304-afe14b32cb84.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1566af34-ef78-4985-a3a0-138646106f13.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a430b18e-2c09-4dc7-8e8a-098a083f3c4f.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4fd85b0f-1552-4462-adfb-6f4c7488c991.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7f672427-769c-4f34-96d2-c20c005bf455.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/37be0eff-db47-4fb0-b50a-d615572c7266.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Physics","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/76062f9d-4840-4da3-bc52-690e7ee7c05c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4c211206-6012-4786-bfcf-163207678c15.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a1f20337-edcf-401d-beb8-4058a4dc1a9a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2c5e1074-06b5-44b5-92ea-571262c65d48.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5c027729-9af0-4109-af19-6b4ef6dfabe5.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/25b87ff3-879e-4ee8-b7d5-c6a729cdc5ef.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/186c9c1a-ee7b-40c5-9d95-20a82785a383.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/153810dc-f99b-4bb0-8017-3bd5cc46b1f7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/16cfd34f-62d7-4ce3-b02a-6f1a1cdc040f.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/41b9f268-82b5-442b-a4fe-9d9a554bee1b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5ae98901-ca31-47f2-bdfc-53fee26db758.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c7d7436f-cc84-49d5-9dcc-42af0e156b3c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5702b54b-136c-411b-982b-c617c09f69bd.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/26cdc7a9-ad61-484a-890b-a9befe17b3f2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/3d1d8666-9c0d-44c7-a400-bc24a6d2c215.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/8c0c5fcd-5366-45a6-a433-a9b2239563a9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/6dbf1dfb-dc4a-4d64-a3e7-94edd79223bb.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4d96979b-9e44-4d31-a33f-96b52da0543e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bcef3b1f-cd43-4ebe-87f7-d911f3159399.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/709900f4-e83c-40b6-b464-d27a652d5b18.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/582042d6-f780-4a80-9416-5d74f6020de8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/68673f1f-68a3-4e3d-b12e-6522b871da5d.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/d154afb2-ee1f-4448-aa42-bac3bafc15bf.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/6ca24c95-21d7-4559-b9fc-f4382608a311.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2ff61e76-fd66-4b98-b24e-93fd276e526c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b0b9f350-ae7b-4afb-9954-cac1f9690460.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/42b57e59-b488-498c-84d9-9f11ef2d4612.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5c0c3b86-a30c-4d3a-b453-76be077f279b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/769a6c7e-ca79-49e1-810c-2706a9978b5b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7da70c14-35f2-4638-9175-c3c6f54784fc.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5edd1a94-4c5d-4548-a64c-98e3934643db.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/fc16b9ac-4475-49b0-b6de-3472382a7dda.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/da1b552c-2743-4c83-9587-3976bfca4056.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a464e89d-32af-4118-a63b-3b84a6b57e20.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5ed2bbc9-0edb-4722-86f5-f6063b98b8d4.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2c95f282-2974-421a-81d5-fca7b8ccc6f7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/01f9243d-1be4-4544-8739-8b87faa54d86.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5e862cf9-d6c5-4835-acfc-b320091db17f.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/76cb87f0-e7ac-40a4-9837-822b042e42ea.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1f7596f7-d443-446d-ab0d-7a9257486a28.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/051d09c0-22af-40de-afe3-032432c9a21a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/835df86e-3c75-4509-95ee-298b72c09ed7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4650be7c-144b-427b-9aa9-e36938a253d8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c88aa2cc-668b-4784-9b42-7c874c083cdf.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/784e9ae9-ff27-4c50-8a07-72af281e3781.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Chemistry","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7c8ef7a7-fa06-4c78-b7a4-01d84d082115.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/72c1b5fc-afb3-4a0c-9a09-693aed6d3fa7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e2e4f43f-8675-473c-8130-781afc653473.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ea1ca227-bb6f-40b7-967c-9390608d7cbb.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/367c160c-0794-458f-ba74-69e514d05e32.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/470e3f4d-62ed-4d1a-99dc-8f5f8c15b40c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/84f3a172-2533-4386-ae5c-185987432d2a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/73506b87-d278-4848-99a7-7ff256322c02.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7c495da3-0fa4-47bb-b0d9-b60615fe5933.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/6650cf1c-c267-4585-bc41-c1c5ae7f3c7b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/8f5340b4-544f-4e54-8cb7-34544a52b7d2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/f2eda1c1-639a-4bb6-b181-f373197e4f99.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/20d37ab2-cff7-41d6-bb2a-a97b9520e40c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b13e4e3f-5fa6-4c35-a79a-a3dc6caeb167.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bb504593-3297-4980-bfbc-0531821f746e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2d989f41-319e-47d7-81a2-fd7fc3a7e522.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/40c5e93e-09cf-4981-8deb-55ea4a6561ba.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/173d79d8-20a4-46a2-86a7-423358809763.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/0a5f2624-280a-4d5d-92e5-ce7b56ba5717.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/44bda520-ab79-49e2-8085-a45bc114e333.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e1edb7a6-7e8b-4b0a-81ff-d16b29584a11.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/934facc9-0a68-4bd8-b0a2-af8d677b4251.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/8094dfc4-4156-4e31-aaf5-4d9865095d3b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/3c7d1b2d-467f-4dcb-b9bd-3594ddb9e2ae.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/259e01ee-3862-4af4-ba52-cdce36c8135a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4868d1a7-0ac6-4517-9da3-f42e5073f9fa.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ce487c1b-6b98-4ae8-8b04-43f18e168322.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/49461ead-30f1-4640-825e-2110eb80910c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/091843bd-15b4-40cf-ac74-4161ad50440c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ac99ba34-230d-49a6-89c7-ccb29fb821d7.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/ae91c580-0486-46ac-a051-1f9df7519607.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b40bab3b-9b66-4d25-91bc-a15bf12c8fea.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c2e22194-f739-4a44-adba-1dc16c422cc8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/baa784e2-36c0-4dbc-96c9-77dc152c95aa.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/53f3f2f3-92a2-4d85-8474-78d7b2af3c13.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b8c87263-16c1-4feb-ade9-62ddcfebb4c2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/359f3579-e2b7-4c55-8354-0697353878f3.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/511b64ba-ae7f-425b-ae6e-65b43dfc87ad.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/417a3bc0-b3e9-41b4-bfcc-223eac92812e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7c4aab2c-092b-4c78-9ef5-0b358072a3b0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c99cd3d6-5de5-44e2-beee-41976255ab5e.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/eb500336-6129-4373-9e4d-b4f6fbb84cdb.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/f4581c25-4833-487b-9982-c50fed2a0ae9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/0d5056ae-5177-4993-9fd9-f95d9daaf426.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bc8bc7b8-b4b5-40da-8f37-2c8022e86945.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Botany","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2e7b8467-e764-4f29-86c9-bfe8e553a1a9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4e056ea0-cb09-4153-848a-cbcaafaf86e4.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/fb18e69a-6117-4df1-9298-ffa6d1242eae.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b289406a-50b7-48b9-b31d-55f723242a37.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/bffa4f6a-cf2b-4c84-afde-8bb2a1073a48.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/93fdd8f1-1e75-4003-bf7c-71d0a87f44bf.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b80562ec-fa9a-4e0a-b3e7-333f9596d9df.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/92943665-b184-4c97-aed6-552231ae279c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1fd93f92-bcf7-4415-b44b-864952a4f366.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/07d76d02-ad94-4788-a2ca-90078400ddf0.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1ba4da22-2060-4e78-8dcd-00e0b476908b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2f8b3861-a800-46c9-a712-7438ec809dcc.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7cd1c581-0ae7-4725-b360-cf24b31f38a5.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5da73ea2-4aa1-43ba-bc12-abde88d7641d.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/76c2867a-e9f5-42e2-850f-aac1422a08f3.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/d2442a32-c064-4ab2-b9d3-a4b60346b119.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/cd6637cd-ebc8-49f1-ab31-c5a1009bce98.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/3b8fc2b9-7c8b-4671-88cd-ac7509f4b8ef.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c7f9f867-b408-48ae-a730-881d921b834a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5a3fd741-4f30-4dee-828f-6db6b1238b74.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2d415fcb-4e7e-47c7-91d5-1ff286085ada.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/a31672f2-8154-4f12-81b9-ea062c8ad7f1.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b8782a31-0a4f-42c7-a4bd-bc7f4d2b99c8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/5c6ff8a9-1847-46f2-bf84-12f50d5e026a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e892bf9a-58bc-4090-9d58-d37f1cf22a5a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e757b6e9-c751-4c28-8733-12e950733612.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/4a2ab36e-537d-4f4b-ab69-a90299902809.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/6ea98e27-6435-42b6-9fb7-47fc805f29a1.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/de29b41a-fbf5-484b-8d65-a99eeecc3dde.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/b526e548-d111-4b0b-a370-1db0cc872376.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/36d1de72-1a22-4c4c-99dd-81592a24288b.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7b4a9872-a09d-4001-82cd-dd6162356a71.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/34979e0f-d461-4ed8-b590-fc321f6cddd2.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/24598cdb-57c8-481e-b4a7-889ed89faaea.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/16c15ad9-42eb-45b0-9b17-cf8dbbd3ba4a.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/2ee072ce-ff4b-4d12-a56b-30b08f82af46.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e88d3632-f29c-4428-a98c-a9d075eb0044.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/11741fd2-7f12-4a0f-b0e4-c77f348893ca.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/20936c39-462a-4003-acd0-0f18593df24c.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e0fb670f-c7bf-4179-87e0-cca0006e9ee8.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/1380cbdd-c4ea-4a53-8ed2-5e7a5a73c939.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/c84ec7ad-6bc6-4ca9-914b-8f3f879874d4.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/7f9d3e91-67a8-4335-93f6-91590bf3cac6.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/17c9fc99-d25e-4cea-9827-78a3c0470665.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}},{"question":"<img src='https://static.pw.live/5b09189f7285894d9130ccd0/e24ba826-fc23-4e3a-8cc0-58cde0eee4d9.png' class='igg'>","type":"mcq","options":["A","B","C","D"],"userAnswer":null,"skipped":false,"visited":false,"timeTaken":0,"section":"Zoology","marks":{"correct":4,"wrong":1}}];
+
       var currentQuestion = 0;
       var startTime;
       let timer;
       let timeLimit = 10800; // 3 hours in seconds
-      //let timeLimit = 10; // 3 hours in seconds
       let timerEnabled = true;
-      let i=0;
-       
-  // quiz codes !     
+
   function startQuiz() {
-       
+
     var qppbox = document.getElementById("qpbox");
       qppbox.style.display = "block";
-      
+
     var startBtn = document.getElementById("start-btn");
       startBtn.style.display = "none";
 
     var instructiondiv = document.getElementById("instruction");
-    instructiondiv.style.display = "none";  
+    instructiondiv.style.display = "none";
     var submit_test_btn = document.getElementById('submit-btn');
     submit_test_btn.style.display = 'block';
-  
+
     var questionContainer = document.getElementById("question-container");
       questionContainer.style.display = "block";
-  
-      
+
+
     var opt = document.getElementById("optt");
       opt.style.display = "inline-block";
-  
-      startTime = new Date();
-      displayQuestion();
-        // if (timerEnabled) {
-        //   startTimer();
-        // }
 
-        var timerMinutes = parseInt(document.getElementById("timer-minutes").value);
+      startTime = new Date();
+      var cbtKeypad = document.getElementById('cbt-keypad');
+      if (cbtKeypad) cbtKeypad.classList.add('active');
+      displayQuestion();
+
+      var timerMinutes = parseInt(document.getElementById("timer-minutes").value);
     if (timerMinutes > 0) {
         timerEnabled = true;
         timeLimit = timerMinutes * 60;
@@ -1373,156 +1640,24 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         timerEnabled = false;
     }
-     
+
     }
-          
+
   function skipQuestion() {
   var question = questions[currentQuestion];
   question.skipped = true;
   question.visited = false;
   question.userAnswer = null;
   question.timeTaken = getTimeTakenInSeconds();
-  
+
   if (currentQuestion < questions.length) {
     currentQuestion++;
     displayQuestion();
-    
+
   } else {
     alert("This was the last Question of the Test");
-  }  
-}   
-
-// function displayQuestion() {
-//     var questionContainer = document.getElementById("question-container");
-//     var question = questions[currentQuestion];
-
-//     // Mark the current question as visited
-//     question.visited = true;
-//     console.log("Question " + (currentQuestion + 1) + " marked as visited.");
-
-//     var html = '<div class="question">';
-    
-//     // New header controls container
-//     html += '<div class="header-controls">';
-//     html += '<button id="question-palette-button" onclick="toggleQuestionPalette()">';
-//     html += '<i class="fas fa-th"></i> Show Index</button>';
-//     html += '<i id="flag-icon" class="fas fa-flag' + (question.markedForReview ? ' marked' : '') + '" onclick="toggleReviewFlag()"></i>';
-//     html += '</div>';
-    
-//     // Question info bar
-//     html += '<div class="question-info-bar">';
-//     html += '<span class="question-number">Question ' + (currentQuestion + 1) + '</span>';
-//     html += '<span class="section-info">' + question.section + '</span>';
-//     html += '<div class="marks-box">';
-//     html += '<span class="correct-marks">+' + question.marks.correct + '</span>';
-//     html += '<span class="wrong-marks">-' + question.marks.wrong + '</span>';
-//     html += '</div>';
-//     html += '<span class="question-type">' + question.type.toUpperCase() + '</span>';
-//     html += '</div>';
-    
-//     html += "<br>" + question.question + "</div>";
-
-//     if (question.type === "mcq") {
-//         html += '<div class="options">';
-//         for (var i = 0; i < question.options.length; i++) {
-//             html += '<div class="option-container">';
-//             html += '<input type="radio" id="option_' + i + '" name="option" value="' + i + '"';
-            
-//             if (question.userAnswer !== null && question.userAnswer === i) {
-//                 html += ' checked';
-//             }
-            
-//             html += '>';
-//             html += '<label for="option_' + i + '">' + question.options[i] + '</label>';
-//             html += '</div>';
-//         }
-//         html += '</div>';
-//     } else if (question.type === "integer") {
-//         html += "<p class='integer-input'>WRITE IN BOX: <input placeholder='Write here...' class='inpt' type='number' id='integer-answer' step='1' value='" + (question.userAnswer !== null ? question.userAnswer : "") + "'/></p><br>";
-//     }
-
-//     html += '<div class="button-container">';
-//     if (currentQuestion > 0) {
-//         html += "<button id='prev-btn' onclick='goToPreviousQuestion()'>Previous</button>";
-//     }
-   
-//     html += "<button id='submit-btn' onclick='submitQuiz()'>Save & Next</button>";
-//     html += "<button id='skip-btn' onclick='skipQuestion()'>Skip</button>";
-//     html += '</div>';
-
-//     questionContainer.innerHTML = html;
-//     updateQuestionPalette();
-//     updateFlagIcon();
-// }
-
-
-
-// function displayQuestion() {
-//     var questionContainer = document.getElementById("question-container");
-//     var question = questions[currentQuestion];
-
-//     // Mark the current question as visited
-//     question.visited = true;
-//     console.log("Question " + (currentQuestion + 1) + " marked as visited.");
-
-//     var html = '<div class="question">';
-    
-//     // New header controls container
-//     html += '<div class="header-controls">';
-//     html += '<button id="question-palette-button" onclick="toggleQuestionPalette()">';
-//     html += '<i class="fas fa-th"></i> Show Index</button>';
-//    // html += '<button id="calculator-button" onclick="toggleCalculator()">';
-//     html += '<i class="fas fa-calculator"></i> Calculator</button>';
-//     html += '<i id="flag-icon" class="fas fa-flag' + (question.markedForReview ? ' marked' : '') + '" onclick="toggleReviewFlag()"></i>';
-//     html += '</div>';
-    
-//     // Question info bar
-//     html += '<div class="question-info-bar">';
-//     html += '<span class="question-number">Question ' + (currentQuestion + 1) + '</span>';
-//     html += '<span class="section-info">' + question.section + '</span>';
-//     html += '<div class="marks-box">';
-//     html += '<span class="correct-marks">+' + question.marks.correct + '</span>';
-//     html += '<span class="wrong-marks">-' + question.marks.wrong + '</span>';
-//     html += '</div>';
-//     html += '<span class="question-type">' + question.type.toUpperCase() + '</span>';
-//     html += '</div>';
-    
-//     html += "<br>" + question.question + "</div>";
-
-//     if (question.type === "mcq") {
-//         html += '<div class="options">';
-//         for (var i = 0; i < question.options.length; i++) {
-//             html += '<div class="option-container">';
-//             html += '<input type="radio" id="option_' + i + '" name="option" value="' + i + '"';
-            
-//             if (question.userAnswer !== null && question.userAnswer === i) {
-//                 html += ' checked';
-//             }
-            
-//             html += '>';
-//             html += '<label for="option_' + i + '">' + question.options[i] + '</label>';
-//             html += '</div>';
-//         }
-//         html += '</div>';
-//     } else if (question.type === "integer") {
-//         html += "<p class='integer-input'>WRITE IN BOX: <input placeholder='Write here...' class='inpt' type='number' id='integer-answer' step='1' value='" + (question.userAnswer !== null ? question.userAnswer : "") + "'/></p><br>";
-//     }
-
-//     html += '<div class="button-container">';
-//     if (currentQuestion > 0) {
-//         html += "<button id='prev-btn' onclick='goToPreviousQuestion()'>Previous</button>";
-//     }
-   
-//     html += "<button id='submit-btn' onclick='submitQuiz()'>Save & Next</button>";
-//     html += "<button id='skip-btn' onclick='skipQuestion()'>Skip</button>";
-//     html += '</div>';
-
-//     questionContainer.innerHTML = html;
-//     updateQuestionPalette();
-//     updateFlagIcon();
-// }
-
-
+  }
+}
 
 function displayQuestion() {
     var questionContainer = document.getElementById("question-container");
@@ -1533,15 +1668,15 @@ function displayQuestion() {
     console.log("Question " + (currentQuestion + 1) + " marked as visited.");
 
     var html = '<div class="question">';
-    
-    // Header controls (unchanged)
+
+    // Header controls
     html += '<div class="header-controls">';
     html += '<button id="question-palette-button" onclick="toggleQuestionPalette()">';
     html += '<i class="fas fa-th"></i> Show Index</button>';
     html += '<i id="flag-icon" class="fas fa-flag' + (question.markedForReview ? ' marked' : '') + '" onclick="toggleReviewFlag()"></i>';
     html += '</div>';
-    
-    // Question info bar (unchanged)
+
+    // Question info bar
     html += '<div class="question-info-bar">';
     html += '<span class="question-number">Question ' + (currentQuestion + 1) + '</span>';
     html += '<span class="section-info">' + question.section + '</span>';
@@ -1551,7 +1686,7 @@ function displayQuestion() {
     html += '</div>';
     html += '<span class="question-type">' + question.type.toUpperCase() + '</span>';
     html += '</div>';
-    
+
     html += "<br>" + question.question + "</div>";
 
     if (question.type === "mcq") {
@@ -1559,13 +1694,13 @@ function displayQuestion() {
         for (var i = 0; i < question.options.length; i++) {
             html += '<div class="option-container">';
             html += '<input type="radio" id="option_' + i + '" name="option" value="' + i + '"';
-            
+
             if (question.userAnswer !== null && question.userAnswer === i) {
                 html += ' checked';
             }
-            
+
             html += '>';
-            html += '<label for="option_' + i + '">' + question.options[i] + '</label>';
+            html += '<label for="option_' + i + '">' + renderOptionContent(question.options[i]) + '</label>';
             html += '</div>';
         }
         html += '</div>';
@@ -1574,14 +1709,14 @@ function displayQuestion() {
         for (var i = 0; i < question.options.length; i++) {
             html += '<div class="option-container">';
             html += '<input type="checkbox" id="option_' + i + '" name="option" value="' + i + '"';
-            
+
             // Check if this option was previously selected
             if (question.userAnswer && question.userAnswer.includes(i)) {
                 html += ' checked';
             }
-            
+
             html += '>';
-            html += '<label for="option_' + i + '">' + question.options[i] + '</label>';
+            html += '<label for="option_' + i + '">' + renderOptionContent(question.options[i]) + '</label>';
             html += '</div>';
         }
         html += '</div>';
@@ -1593,7 +1728,7 @@ function displayQuestion() {
     if (currentQuestion > 0) {
         html += "<button id='prev-btn' onclick='goToPreviousQuestion()'>Previous</button>";
     }
-   
+
     html += "<button id='submit-btn' onclick='submitQuiz()'>Save & Next</button>";
     html += "<button id='skip-btn' onclick='skipQuestion()'>Skip</button>";
     html += '</div>';
@@ -1601,6 +1736,7 @@ function displayQuestion() {
     questionContainer.innerHTML = html;
     updateQuestionPalette();
     updateFlagIcon();
+    updateKeypad();
 }
 
 function toggleReviewFlag() {
@@ -1609,7 +1745,7 @@ function toggleReviewFlag() {
   updateFlagIcon();
   updateQuestionPalette();
 }
-  
+
   function updateFlagIcon() {
       var flagIcon = document.getElementById('flag-icon');
       if (questions[currentQuestion].markedForReview) {
@@ -1618,18 +1754,10 @@ function toggleReviewFlag() {
           flagIcon.style.color = 'gray';
       }
   }
-      
-  // function updateFlagIcon() {
-  //     var flagIcon = document.getElementById('flag-icon');
-  //     if (questions[currentQuestion].markedForReview) {
-  //         flagIcon.style.color = 'yellow';
-  //     } else {
-  //         flagIcon.style.color = 'gray';
-  //     }
-  // }
+
   function submitQuiz() {
     var question = questions[currentQuestion];
-    
+
     question.skipped = false; // Remove skipped status when answering
 
     if (question.type === "mcq") {
@@ -1669,19 +1797,19 @@ function toggleReviewFlag() {
         displayQuestion();
     } else {
         submitTest();
-    }        
-}    
-  
+    }
+}
+
   function submit() {
       clearInterval(timer);
-      
+
       var markedQuestions = questions.filter(q => q.markedForReview).map(q => questions.indexOf(q) + 1);
-      var markedMessage = markedQuestions.length > 0 
+      var markedMessage = markedQuestions.length > 0
           ? "Questions marked for review: " + markedQuestions.join(", ")
           : "No questions marked for review.";
-      
+
       var userResponse = confirm("Are you sure you want to submit the test?\n\n" + markedMessage);
-      
+
       if (userResponse) {
           showResult();
       } else {
@@ -1698,59 +1826,8 @@ function toggleReviewFlag() {
           displayQuestion();
         }
       }
-  
-  
-  // question pallet
-  // Updated JavaScript code for question palette highlighting
 
-//   function updateQuestionPalette() {
-//   var questionPalette = document.getElementById("questionPalette");
-//   questionPalette.innerHTML = "<button class='togleqboxbtn' onclick='toggleQuestionPalette()'><b>Close Index </b></button>";
-
-//   questions.forEach(function (question, index) {
-//     var sectionName = question.section;
-
-//     if (index === 0 || question.section !== questions[index - 1].section) {
-//       var sectionText = document.createElement("p");
-//       sectionText.className = "palette-item section";
-//       sectionText.textContent = sectionName;
-//       questionPalette.appendChild(sectionText);
-//     }
-
-//     var questionButton = document.createElement("button");
-//     questionButton.className = "palette-item";
-//     questionButton.textContent = index + 1;
-
-//     // Apply color based on question state
-//     if (index === currentQuestion) {
-//       questionButton.classList.add("current");
-//     } else if (!question.visited) {
-//       // No color change for unvisited questions
-//     } else if (question.markedForReview) {
-//       questionButton.classList.add("marked-for-review");
-//     } else if (question.userAnswer !== null) {
-//       questionButton.classList.add("answered");
-//     } else if (question.visited){
-//       questionButton.classList.add("visited");
-//     }  else if (question.skipped) {
-//       questionButton.classList.add("skipped");
-//     } 
-//     // Ensure "marked-for-review" class overrides others
-//     if (question.userAnswer !==null) {
-//       questionButton.classList.remove( "skipped", "visited");
-//       questionButton.classList.add("answered");
-//     }
-    
-
-//     questionButton.addEventListener("click", function () {
-//       goToQuestion(index);
-//     });
-
-//     questionPalette.appendChild(questionButton);
-//   });
-// }
-
-function updateQuestionPalette() {
+  function updateQuestionPalette() {
   var questionPalette = document.getElementById("questionPalette");
   questionPalette.innerHTML = "<button class='togleqboxbtn' onclick='toggleQuestionPalette()'><b>Close Index </b></button>";
 
@@ -1758,11 +1835,11 @@ function updateQuestionPalette() {
   var sectionContainer = document.createElement("div");
   sectionContainer.className = "section-container";
 
-  // Group questions by sections using the new section_name property
+  // Group questions by sections using the section_name/section property
   const sectionMap = new Map();
-  
+
   questions.forEach((question, index) => {
-    const sectionName = question.section_name || question.section; // Fallback to old property if needed
+    const sectionName = question.section_name || question.section;
     if (!sectionMap.has(sectionName)) {
       sectionMap.set(sectionName, []);
     }
@@ -1774,7 +1851,7 @@ function updateQuestionPalette() {
     // Create section header
     var sectionHeader = document.createElement("div");
     sectionHeader.className = "section-header";
-    
+
     var sectionText = document.createElement("p");
     sectionText.className = "palette-item section";
     sectionText.textContent = sectionName;
@@ -1834,12 +1911,10 @@ function updateQuestionPalette() {
   questionPalette.appendChild(sectionContainer);
 }
 
-
-  
   function toggleQuestionPalette() {
     var questionPalette = document.getElementById("questionPalette");
     var questionPaletteButton = document.getElementById("question-palette-button");
-  
+
     if (questionPalette.style.display === "none") {
       questionPalette.style.display = "block";
       questionPalette.classList.remove("hidden");
@@ -1848,16 +1923,16 @@ function updateQuestionPalette() {
       questionPalette.style.display = "none";
       questionPalette.classList.add("hidden");
       questionPaletteButton.textContent = "Show Index";
-  
+
       // Restart the animation by removing and re-adding the "hidden" class
       questionPalette.offsetWidth; // Trigger a reflow to restart the animation
       questionPalette.classList.remove("hidden");
       setTimeout(() => {
         questionPalette.classList.add("hidden");
-      }, 10); // Add a small delay before adding the "hidden" class back
+      }, 10);
     }
   }
-  
+
   function goToQuestion(questionIndex) {
     for (let i = currentQuestion + 1; i < questions.length; i++) {
         questions[i].skipped = true;
@@ -1865,9 +1940,7 @@ function updateQuestionPalette() {
     currentQuestion = questionIndex;
     displayQuestion();
   }
-  
-    // timer codes 
-  
+
   function toggleTimer() {
             timerEnabled = document.getElementById("timer-checkbox").checked;
             if (!timerEnabled) {
@@ -1875,15 +1948,15 @@ function updateQuestionPalette() {
               document.getElementById("timer").textContent = "";
             }
           }
-      
+
   function getTimeTakenInSeconds() {
             var currentTime = new Date();
             var timeDiff = currentTime - startTime;
             var seconds = Math.floor(timeDiff / 1000);
             return seconds;
           }
-          
-  
+
+
   function startTimer() {
             timer = setInterval(function() {
               if (timeLimit <= 0) {
@@ -1896,14 +1969,14 @@ function updateQuestionPalette() {
               }
             }, 1000);
           }
-          
+
   function formatTime(seconds) {
             var hours = Math.floor(seconds / 3600);
             var minutes = Math.floor((seconds % 3600) / 60);
             var secs = seconds % 60;
             return (hours < 10 ? "0" : "") + hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (secs < 10 ? "0" : "") + secs;
           }
-      
+
   function updateTimerDisplay() {
             const timerElement = document.getElementById("timer");
             if (timeLimit <= 300 && timeLimit > 60) { // less than 5 minutes
@@ -1915,17 +1988,17 @@ function updateQuestionPalette() {
             }
             timerElement.textContent = formatTime(timeLimit);
           }
-     
+
   function showLoading() {
           document.getElementById("overlay").style.display = "block";
           document.getElementById("loading").style.display = "block";
       }
-  
+
       function hideLoading() {
           document.getElementById("overlay").style.display = "none";
           document.getElementById("loading").style.display = "none";
       }
-  
+
   </script>
   <script>
   document.getElementById('quizForm').onsubmit = function(event) {
@@ -1934,10 +2007,10 @@ function updateQuestionPalette() {
     showpop()
     function showpop(){
     var markedQuestions = questions.filter(q => q.markedForReview).map(q => questions.indexOf(q) + 1);
-    var markedMessage = markedQuestions.length > 0 
+    var markedMessage = markedQuestions.length > 0
         ? "Questions marked for review: " + markedQuestions.join(", ")
         : "No questions marked for review.";
-    
+
     // Create and show custom popup
     var popup = document.createElement('div');
     popup.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:white;padding:20px;border:1px solid black;z-index:1000;';
@@ -1970,266 +2043,10 @@ function proceedWithSubmission() {
     showResult();
     showLoading();
 }
-
-// function showResult(){
-
-//   let is_dpp = false;
-//   const type = 'batch_test';
-//   const batch_name = 'Yakeen NEET Hindi 2.0 2027';
-//   var batch_id = '6a38f418034b8baed508e6e4';
-//   var test_id = '6a893a5bbc192b01ead1a6ba';
-//   var test_name = 'Rank Booster Test-01';
-  
-//   if (is_dpp) {
-//     var urlParts = window.location.pathname.split('/');
-//     var subject_slug = urlParts[3]
-//     var data = {
-//         batch_id: batch_id,
-//         test_id: test_id,
-//         subject_slug: subject_slug,
-//         questions: questions ,
-//         test_name:test_name,
-//         batch_name : batch_name,
-//         type : type
-//     };
-//   }
-//   else {
-//     var data = {
-//     batch_id: batch_id,
-//     test_id: test_id,
-//     test_name: test_name,
-//     batch_name : batch_name,
-//     questions: questions  ,
-//     type : type
-//   } ;
-// }
-//    fetch('/submit-test', {
-//     method: 'POST',
-//     headers: {
-//         'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(data)
-// }).then(response => response.json())
-//     .then(result => {
-//        displayResult(result.result , result.message);
-//     })
-//     .catch(error => {
-//         console.error('Error:', error);
-//     });
-
-// }
-function showResult() {
-  let is_dpp = false;
-  const type = 'batch_test';
-  const batch_name = 'Yakeen NEET Hindi 2.0 2027';
-  var batch_id = '6a38f418034b8baed508e6e4';
-  var test_id = '6a893a5bbc192b01ead1a6ba';
-  var test_name = 'Rank Booster Test-01';
-
-  let data = {
-    batch_id: batch_id,
-    test_id: test_id,
-    test_name: test_name,
-    batch_name: batch_name,
-    questions: questions,
-    type: type
-  };
-
-  if (is_dpp) {
-    var urlParts = window.location.pathname.split('/');
-    var subject_slug = urlParts[3];
-
-    fetch(`/get-subject-name/${batch_name}/${batch_id}/${subject_slug}`)
-      .then(response => response.json())
-      .then(subjectData => {
-        if (!subjectData.success) {
-          throw new Error('Failed to fetch subject name');
-        }
-
-        data.subject_slug = subject_slug;
-        data.subject_name = subjectData.subject_name;
-
-        return submitTestfinal(data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  } else {
-    submitTestfinal(data);
-  }
-}
-
-// Function to submit test data and handle response
-function submitTestfinal(data) {
-  return fetch('/submit-test', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(result => {
-    displayResult(result.result, result.message); // Display result here
-  })
-  .catch(error => {
-    console.error('Submission error:', error);
-  });
-}
-
-
-function printResult() {
-    var printWindow = window.open('', '_blank');
-    
-    var printContent = '<html><head><title>Quiz Results</title>';
-    printContent += '<style>';
-    printContent += 'body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f0f0f0; }';
-    printContent += '.section { margin-bottom: 30px; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 15px; }';
-    printContent += 'h2 { color: #333; text-align: center; }';
-    printContent += '.question, .answer { margin-bottom: 15px; padding: 10px; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; }';
-    printContent += 'img { max-width: 100%; height: auto; display: block; margin: 10px 0; }';
-    printContent += '.question-number { font-weight: bold; margin-bottom: 5px; }';
-    printContent += '.correct-answer { margin-top: 5px; color: green; }';
-    printContent += '.user-response { margin-top: 5px; }';
-    printContent += '.user-response.correct { color: orange; }';
-    printContent += '.user-response.wrong { color: red; }';
-    printContent += '</style>';
-    printContent += '</head><body>';
-    
-    var resultDiv = document.getElementById('result');
-    var sections = resultDiv.querySelectorAll('#headings');
-    
-    // Questions and Answers combined section
-    printContent += '<div class="section"><h2>All Questions with Correct Answers and Your Responses</h2>';
-    var questionCounter = 1;
-    sections.forEach(function(section) {
-        var nextTable = section.nextElementSibling;
-        if (nextTable && nextTable.tagName === 'TABLE') {
-            var questions = nextTable.querySelectorAll('tr:not(:first-child):not(:last-child)');
-            questions.forEach(function(question) {
-                var questionImage = question.querySelector('img');
-                var answerCell = question.querySelector('td:nth-child(3)');
-                var correctAnswer = answerCell.querySelector('div[style*="color: green"]');
-                var userResponse = answerCell.querySelector('div[style*="color: orange"], div[style*="color: red"]');
-                
-                printContent += '<div class="question">';
-                printContent += '<div class="question-number">Question ' + questionCounter + '</div>';
-                if (questionImage) {
-                    printContent += questionImage.outerHTML;
-                }
-                if (correctAnswer) {
-                    printContent += '<div class="correct-answer">Correct Answer: ' + correctAnswer.innerHTML + '</div>';
-                }
-                if (userResponse) {
-                    var isCorrect = userResponse.style.color === "orange";
-                    var responseClass = isCorrect ? "correct" : "wrong";
-                    printContent += '<div class="user-response ' + responseClass + '">Your Response: ' + userResponse.innerHTML + '</div>';
-                }
-                printContent += '</div>';
-                questionCounter++;
-            });
-        }
-    });
-    printContent += '</div>';
-    var overallResultContainer = document.querySelector(".overall-result-container");
-    printContent +='<div>'+overallResultContainer.innerHTML+'</div>'
-    
-    printContent += '</body></html>';
-    
-    printWindow.document.write(printContent);
-    printWindow.document.close();
-    printWindow.print();
-}
-
-function displayResult(result , message) {
-      var resultContainer = document.getElementById('result');
-
-
-    // Decode the Base64 string
-    const decodedHtml = atob(result);
-
-    // Insert the decoded HTML into the result container
-    hideLoading();
-    resultContainer.innerHTML = decodedHtml;
-    resultContainer.innerHTML += '<button id="printResultBtn" onclick="printResult()">Print Result</button>';
-    resultContainer.innerHTML += '<br><div>'+message+'</div>';
-      
-
-      // Add styling
-      var overallResultContainer = document.querySelector(".overall-result-container");
-      overallResultContainer.style.backgroundColor = "#f2f2f2";
-      overallResultContainer.style.padding = "20px";
-      overallResultContainer.style.borderRadius = "10px";
-      overallResultContainer.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-  
-      var overallResultBox = document.querySelector(".overall-result-box");
-      overallResultBox.style.backgroundColor = "#fff";
-      overallResultBox.style.padding = "20px";
-      overallResultBox.style.borderRadius = "10px";
-      overallResultBox.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-  
-      var accuracyScore = document.querySelector(".accuracy-score");
-      accuracyScore.style.fontWeight = "bold";
-      accuracyScore.style.fontSize = "1.2em";
-  
-      var feedbackMessage = document.querySelector(".feedback-message");
-      feedbackMessage.style.fontWeight = "bold";
-      feedbackMessage.style.fontSize = "1.1em";
-  
-      // Style the result images
-      var resultImages = document.querySelectorAll('.result-image');
-      resultImages.forEach(function(img) {
-          img.style.maxWidth = '200px';
-          img.style.maxHeight = '200px';
-          img.style.objectFit = 'contain';
-          img.style.cursor = 'pointer';
-      });
-  
-      // Hide other elements
-      // Hide other elements
-    document.getElementById("optt").style.display = "none";
-    document.getElementById("question-palette-button").style.display = "none";
-    document.getElementById("quiz").style.display = "none";
-    resultContainer.style.display = "block";
-    links();
-}
-
-
-function links(){
-  const videoSolutionLinks = document.querySelectorAll('.video-solution-link');
-  videoSolutionLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-      const videoLink = event.target.getAttribute('data-link');
-      if (videoLink === '#') {
-        event.preventDefault(); // Prevent default action of the link
-        alert('No solution added.');
-      } else if (videoLink.includes('youtube')) {
-        // Open YouTube links directly
-        window.open(videoLink, '_blank');
-      }else {
-        // Open the video solution link in a new tab or perform your desired action
-        window.open(`https://player-fqv0.onrender.com/?l=${videoLink}`, '_blank');
-      }
-    });
-  });
-}
-
-    function openModal(src) {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("img01");
-        modal.style.display = "block";
-        modalImg.src = src;
-    }
-
-    function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-    }
 </script>
+
+<!-- Result submission / display / print / modal logic now lives in results.js -->
+<script src="./results.js"></script>
 
 <div id="myModal" class="modal">
     <span class="close" onclick="closeModal()">×</span>
@@ -2280,9 +2097,7 @@ function links(){
 
 <link rel="stylesheet" href="./MS.css">
 
-
 </div>
-        <!-- <div class="calculator-overlay"></div> -->
         <div class="calculator-popup">
             <div class="calculator-header">
                 <div class="calculator-title">Scientific Calculator</div>
@@ -2290,4 +2105,4 @@ function links(){
             </div>
             <iframe class="calculator-frame" src="https://www.tcsion.com/OnlineAssessment/ScientificCalculator/Calculator.html"></iframe>
         </div>
-    </body><script id="eruda-pro-loader" src="https://cdn.jsdelivr.net/npm/eruda"></script><div id="eruda" style="all: initial;"></div><div class="__chobitsu-hide__" style="all: initial;"></div>
+    </body>
