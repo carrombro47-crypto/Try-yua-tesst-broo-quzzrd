@@ -1999,6 +1999,26 @@ function toggleReviewFlag() {
           document.getElementById("loading").style.display = "none";
       }
 
+  // ===== Auto-start the test on page load =====
+  // The instructions box and "Start Test" button are hidden by design, so
+  // nothing was ever calling startQuiz()/displayQuestion() and the first
+  // question never rendered. This restores the original behaviour: the
+  // quiz begins immediately with Question 1 and the timer running.
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('qpbox').style.display = 'block';
+    document.getElementById('question-container').style.display = 'block';
+    document.getElementById('optt').style.display = 'inline-block';
+    var cbtKeypad = document.getElementById('cbt-keypad');
+    if (cbtKeypad) cbtKeypad.classList.add('active');
+
+    startTime = new Date();
+    displayQuestion();
+
+    timeLimit = 10800; // 3 hours (matches the old default)
+    timerEnabled = true;
+    startTimer();
+  });
+
   </script>
   <script>
   document.getElementById('quizForm').onsubmit = function(event) {
