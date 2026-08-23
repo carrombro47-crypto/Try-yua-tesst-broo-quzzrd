@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page  - Quizard</title>
+    <title>Test Page  PW SENSEI</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <style>
       /* ===== Core Layout & Container Styles ===== */
@@ -1178,14 +1178,14 @@ body {
         <li>Accuracy is ratio of Right  &amp; Wrong Questions</li>
         <li>At end of test in results you can Click image to make it bigger</li>
         <li>Must use bigger Sreen </li>
-      <button id="start-btn" onclick="startQuiz()" style="display: none;">Start Quiz</button><br>
+      <button id="start-btn" onclick="startQuiz()" style="display: none;">Start Test</button><br>
       <div class="timer-input">
         <label for="timer-minutes">Set Timer (minutes): </label>
         <input type="number" id="timer-minutes" min="1" max="180" value="180">
       </div>
     </div> 
     </center>
-    <div id="timer" style="font-size: 20px; font-weight: bold;">02:57:52</div>
+    <div id="timer" style="font-size: 20px; font-weight: bold;">03:00:00</div>
     <div id="question-container" style="display: block;"><div class="question"><div class="header-controls"><button id="question-palette-button" onclick="toggleQuestionPalette()">Show Index</button><i id="flag-icon" class="fas fa-flag" onclick="toggleReviewFlag()" style="color: gray;"></i></div><div class="question-info-bar"><span class="question-number">Question 1</span><span class="section-info">Physics</span><div class="marks-box"><span class="correct-marks">+4</span><span class="wrong-marks">-1</span></div><span class="question-type">MCQ</span></div><br><img src="https://static.pw.live/5b09189f7285894d9130ccd0/af2c72ad-b6e0-403c-aada-e5384569bd2e.png" class="igg"></div><div class="options"><div class="option-container"><input type="radio" id="option_0" name="option" value="0"><label for="option_0">A</label></div><div class="option-container"><input type="radio" id="option_1" name="option" value="1"><label for="option_1">B</label></div><div class="option-container"><input type="radio" id="option_2" name="option" value="2"><label for="option_2">C</label></div><div class="option-container"><input type="radio" id="option_3" name="option" value="3"><label for="option_3">D</label></div></div><div class="button-container"><button id="submit-btn" onclick="submitQuiz()">Save &amp; Next</button><button id="skip-btn" onclick="skipQuestion()">Skip</button></div></div>
     <br>
     <center><form id="quizForm" method="POST" action="/submit-quiz">  
@@ -2278,7 +2278,7 @@ function links(){
 }
 </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="./MS.css">
 
 
 </div>
