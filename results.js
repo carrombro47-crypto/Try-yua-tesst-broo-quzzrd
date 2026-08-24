@@ -40,6 +40,8 @@ function showResult() {
       })
       .catch(error => {
         console.error('Error:', error);
+        hideLoading();
+        showSubmissionError(error);
       });
   } else {
     submitTestfinal(data);
@@ -57,16 +59,59 @@ function submitTestfinal(data) {
   })
   .then(response => {
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error('Server returned ' + response.status + ' ' + response.statusText);
     }
     return response.json();
   })
   .then(result => {
+    if (!result || typeof result.result === 'undefined') {
+      throw new Error('Server response did not include a result.');
+    }
     displayResult(result.result, result.message); // Display result here
   })
   .catch(error => {
     console.error('Submission error:', error);
+    hideLoading();
+    showSubmissionError(error);
   });
+}
+
+// Shows a clear, dismissable error instead of leaving "Generating result..."
+// spinning forever, and lets the user retry the submission.
+function showSubmissionError(error) {
+  var overlay = document.getElementById('overlay');
+  var loading = document.getElementById('loading');
+  if (overlay) overlay.style.display = 'none';
+  if (loading) loading.style.display = 'none';
+
+  var existing = document.getElementById('submission-error-popup');
+  if (existing) existing.remove();
+
+  var popup = document.createElement('div');
+  popup.id = 'submission-error-popup';
+  popup.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);' +
+    'background:#fff;padding:20px 24px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.25);' +
+    'z-index:2000;max-width:90%;width:360px;text-align:center;font-family:Inter,system-ui,sans-serif;';
+  popup.innerHTML =
+    '<p style="color:#c62828;font-weight:600;margin:0 0 8px;">Result generate nahi ho paaya</p>' +
+    '<p style="color:#555;font-size:14px;margin:0 0 16px;">' +
+      'Server se result nahi mila (' + (error && error.message ? error.message : 'unknown error') + '). ' +
+      'Internet check karein aur dobara try karein.' +
+    '</p>' +
+    '<button id="submission-error-retry" style="background:#1976d2;color:#fff;border:none;' +
+      'padding:10px 20px;border-radius:8px;font-weight:600;cursor:pointer;margin-right:8px;">Retry</button>' +
+    '<button id="submission-error-close" style="background:#eee;color:#333;border:none;' +
+      'padding:10px 20px;border-radius:8px;font-weight:600;cursor:pointer;">Close</button>';
+  document.body.appendChild(popup);
+
+  document.getElementById('submission-error-retry').onclick = function () {
+    popup.remove();
+    showLoading();
+    showResult();
+  };
+  document.getElementById('submission-error-close').onclick = function () {
+    popup.remove();
+  };
 }
 
 function printResult() {
@@ -136,7 +181,14 @@ function displayResult(result, message) {
     var resultContainer = document.getElementById('result');
 
     // Decode the Base64 string
-    const decodedHtml = atob(result);
+    var decodedHtml;
+    try {
+        decodedHtml = atob(result);
+    } catch (e) {
+        hideLoading();
+        showSubmissionError(new Error('Result data from server was invalid/corrupted.'));
+        return;
+    }
 
     // Insert the decoded HTML into the result container
     hideLoading();
@@ -178,8 +230,6 @@ function displayResult(result, message) {
     document.getElementById("optt").style.display = "none";
     document.getElementById("question-palette-button").style.display = "none";
     document.getElementById("quiz").style.display = "none";
-    var cbtKeypadEl = document.getElementById('cbt-keypad');
-    if (cbtKeypadEl) cbtKeypadEl.classList.remove('active');
     resultContainer.style.display = "block";
     links();
 }

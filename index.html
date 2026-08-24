@@ -1129,195 +1129,18 @@ body {
 </head>
 <body>
 
-<!-- ===== CBT MODE: Right-side hardware-style keypad ===== -->
 <style>
-  #cbt-keypad {
-    position: fixed;
-    top: 50%;
-    right: 14px;
-    transform: translateY(-50%);
-    width: 128px;
-    max-height: 92vh;
-    overflow-y: auto;
-    background: linear-gradient(180deg,#20263a,#151a28);
-    border: 1px solid #323b52;
-    color: #e9ecf5;
-    border-radius: 14px;
-    padding: 12px 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-    z-index: 2000;
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  #cbt-keypad.active { display: flex; }
-  #cbt-keypad .cbt-qnum {
-    text-align: center;
-    font-weight: 700;
-    font-size: 13px;
-    color: #9fb0e0;
-    letter-spacing: 0.5px;
-  }
-  .cbt-scrollpad {
-    height: 100px;
-    border-radius: 10px;
-    background: linear-gradient(180deg,#2c3450,#181d2c);
-    border: 1px solid #3a4568;
-    position: relative;
-    cursor: ns-resize;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 0;
-    touch-action: none;
-  }
-  .cbt-scrollpad .cbt-arrow { font-size: 12px; color: #7c88ad; line-height: 1; }
-  .cbt-scrollpad .cbt-thumb {
-    width: 24px; height: 24px; border-radius: 50%;
-    background: radial-gradient(circle at 35% 30%, #6d8bff, #3b57d6);
-    box-shadow: 0 2px 8px rgba(59,87,214,0.6);
-  }
-  .cbt-scrollpad-label {
-    font-size: 9px; text-align: center; color: #6d7a9e; margin-top: -4px;
-  }
-  .cbt-options-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
-  }
-  .cbt-opt-btn {
-    aspect-ratio: 1;
-    border-radius: 8px;
-    border: 2px solid #3a4568;
-    background: #232a40;
-    color: #e9ecf5;
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all .15s ease;
-  }
-  .cbt-opt-btn:hover { border-color: #4c6ef5; }
-  .cbt-opt-btn.selected {
-    background: #1b7a3a; border-color: #1b7a3a; color: #fff;
-  }
-  .cbt-int-pad { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
-  .cbt-actions { display: flex; flex-direction: column; gap: 6px; }
-  .cbt-actions button {
-    padding: 9px 4px; font-size: 11px; border-radius: 7px; border: none;
-    cursor: pointer; font-weight: 700; letter-spacing: 0.2px; color: #fff;
-  }
-  #cbt-mark { background: #8e24aa; }
-  #cbt-mark.active-flag { background: #ffb300; color: #201a00; }
-  #cbt-clear { background: #55617e; }
-  #cbt-save { background: #1976d2; }
-  #cbt-prev { background: #37415c; }
-  #cbt-palette { background: #2f3a54; }
-  #cbt-submit-test { background: #c62828; }
-
-  /* Lock direct touch/click selection of options - CBT mode uses keypad only */
-  .options input[type="radio"],
-  .options input[type="checkbox"] { pointer-events: none !important; }
-  .options label { pointer-events: none !important; cursor: default !important; }
-
+  /* Option image styling (used when an option's text is actually an image URL) */
   .option-img {
     max-width: 100%;
     max-height: 220px;
     display: block;
     margin: 0 auto;
     border-radius: 8px;
-    pointer-events: none;
-  }
-
-  @media (max-width: 900px) {
-    #cbt-keypad {
-      top: auto; bottom: 8px; right: 8px; left: 8px; transform: none;
-      width: auto; max-height: 40vh; flex-direction: row; flex-wrap: wrap;
-      align-items: center; justify-content: space-between; padding: 8px;
-    }
-    #cbt-keypad .cbt-qnum { width: 100%; }
-    .cbt-scrollpad { width: 60px; height: 60px; }
-    .cbt-options-row { flex: 1; }
-    .cbt-actions { flex-direction: row; flex-wrap: wrap; flex: 1 1 100%; }
-    .cbt-actions button { flex: 1 1 30%; }
   }
 </style>
 
-<div id="cbt-keypad">
-  <div class="cbt-qnum" id="cbt-qnum">Q1</div>
-  <div class="cbt-scrollpad" id="cbt-scrollpad" title="Drag up/down to scroll the page">
-    <span class="cbt-arrow">&#9650;</span>
-    <span class="cbt-thumb"></span>
-    <span class="cbt-arrow">&#9660;</span>
-  </div>
-  <div class="cbt-scrollpad-label">Drag to scroll</div>
-  <div id="cbt-options-container"></div>
-  <div class="cbt-actions">
-    <button type="button" id="cbt-mark" onclick="cbtMarkForReviewAndNext()">Mark &amp; Next</button>
-    <button type="button" id="cbt-clear" onclick="cbtClearResponse()">Clear</button>
-    <button type="button" id="cbt-save" onclick="submitQuiz()">Save &amp; Next</button>
-    <button type="button" id="cbt-prev" onclick="goToPreviousQuestion()">Previous</button>
-    <button type="button" id="cbt-palette" onclick="toggleQuestionPalette()">Index</button>
-    <button type="button" id="cbt-submit-test" onclick="cbtSubmitTest()">Submit Test</button>
-  </div>
-</div>
-
 <script>
-(function () {
-  function initScrollpad() {
-    var pad = document.getElementById('cbt-scrollpad');
-    if (!pad || pad.dataset.bound) return;
-    pad.dataset.bound = "1";
-    var dragging = false, lastY = 0;
-
-    function start(e) {
-      dragging = true;
-      lastY = (e.touches ? e.touches[0].clientY : e.clientY);
-      e.preventDefault();
-    }
-    function move(e) {
-      if (!dragging) return;
-      var y = (e.touches ? e.touches[0].clientY : e.clientY);
-      var delta = y - lastY;
-      window.scrollBy(0, delta * 3);
-      lastY = y;
-      e.preventDefault();
-    }
-    function stop() { dragging = false; }
-
-    pad.addEventListener('mousedown', start);
-    pad.addEventListener('touchstart', start, { passive: false });
-    document.addEventListener('mousemove', move, { passive: false });
-    document.addEventListener('touchmove', move, { passive: false });
-    document.addEventListener('mouseup', stop);
-    document.addEventListener('touchend', stop);
-
-    pad.addEventListener('wheel', function (e) {
-      window.scrollBy(0, e.deltaY);
-    }, { passive: true });
-  }
-
-  // Hard-block direct touch/click selection on options - keypad only (real CBT behaviour)
-  document.addEventListener('click', function (e) {
-    var t = e.target;
-    if (t && t.closest && t.closest('.options')) {
-      if (t.tagName === 'LABEL' || t.tagName === 'INPUT') {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    }
-  }, true);
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initScrollpad);
-  } else {
-    initScrollpad();
-  }
-})();
-
 function renderOptionContent(opt) {
   if (typeof opt !== 'string') return opt;
   var val = opt.trim();
@@ -1327,125 +1150,8 @@ function renderOptionContent(opt) {
   }
   return val;
 }
-
-function updateKeypad() {
-  var kp = document.getElementById('cbt-keypad');
-  if (!kp) return;
-  var question = questions[currentQuestion];
-  if (!question) { kp.classList.remove('active'); return; }
-
-  document.getElementById('cbt-qnum').textContent = 'Q' + (currentQuestion + 1) + '/' + questions.length;
-
-  var labels = ['A', 'B', 'C', 'D', 'E', 'F'];
-  var html = '';
-  if (question.type === 'mcq' || question.type === 'multi') {
-    html += '<div class="cbt-options-row">';
-    for (var i = 0; i < question.options.length; i++) {
-      var sel = false;
-      if (question.type === 'mcq') {
-        sel = (question.userAnswer !== null && question.userAnswer === i);
-      } else {
-        sel = !!(question.userAnswer && question.userAnswer.includes(i));
-      }
-      html += '<button type="button" class="cbt-opt-btn' + (sel ? ' selected' : '') + '" onclick="selectOptionViaKeypad(' + i + ')">' + labels[i] + '</button>';
-    }
-    html += '</div>';
-  } else if (question.type === 'integer') {
-    html += '<div class="cbt-int-pad">';
-    for (var d = 1; d <= 9; d++) {
-      html += '<button type="button" class="cbt-opt-btn" onclick="keypadTypeDigit(\'' + d + '\')">' + d + '</button>';
-    }
-    html += '<button type="button" class="cbt-opt-btn" onclick="keypadTypeDigit(\'-\')">-</button>';
-    html += '<button type="button" class="cbt-opt-btn" onclick="keypadTypeDigit(\'0\')">0</button>';
-    html += '<button type="button" class="cbt-opt-btn" onclick="keypadBackspace()">&#9003;</button>';
-    html += '</div>';
-  }
-  document.getElementById('cbt-options-container').innerHTML = html;
-
-  var markBtn = document.getElementById('cbt-mark');
-  if (markBtn) markBtn.classList.toggle('active-flag', !!question.markedForReview);
-
-  var prevBtn = document.getElementById('cbt-prev');
-  if (prevBtn) prevBtn.style.visibility = (currentQuestion > 0) ? 'visible' : 'hidden';
-}
-
-function selectOptionViaKeypad(i) {
-  var question = questions[currentQuestion];
-  if (!question) return;
-  var input = document.getElementById('option_' + i);
-  if (!input) return;
-  if (question.type === 'mcq') {
-    input.checked = true;
-  } else if (question.type === 'multi') {
-    input.checked = !input.checked;
-  }
-  updateKeypad();
-}
-
-function keypadTypeDigit(d) {
-  var inp = document.getElementById('integer-answer');
-  if (!inp) return;
-  if (d === '-') {
-    inp.value = inp.value.charAt(0) === '-' ? inp.value.slice(1) : '-' + inp.value;
-  } else {
-    inp.value = (inp.value || '') + d;
-  }
-}
-
-function keypadBackspace() {
-  var inp = document.getElementById('integer-answer');
-  if (!inp) return;
-  inp.value = inp.value.slice(0, -1);
-}
-
-function cbtClearResponse() {
-  var question = questions[currentQuestion];
-  if (!question) return;
-  question.userAnswer = null;
-  question.skipped = true;
-  var inputs = document.querySelectorAll('input[name="option"]');
-  inputs.forEach(function (inp) { inp.checked = false; });
-  var inti = document.getElementById('integer-answer');
-  if (inti) inti.value = '';
-  updateKeypad();
-}
-
-function cbtMarkForReviewAndNext() {
-  var question = questions[currentQuestion];
-  if (!question) return;
-
-  if (question.type === 'mcq') {
-    var sel = document.querySelector('input[name="option"]:checked');
-    if (sel) question.userAnswer = parseInt(sel.value);
-  } else if (question.type === 'multi') {
-    var sels = document.querySelectorAll('input[name="option"]:checked');
-    if (sels.length) question.userAnswer = Array.from(sels).map(function (s) { return parseInt(s.value); });
-  } else if (question.type === 'integer') {
-    var inti = document.getElementById('integer-answer');
-    if (inti && inti.value !== '') question.userAnswer = inti.value;
-  }
-
-  question.markedForReview = true;
-  question.visited = true;
-  question.skipped = false;
-  if (typeof getTimeTakenInSeconds === 'function') {
-    question.timeTaken = getTimeTakenInSeconds();
-  }
-
-  if (currentQuestion < questions.length - 1) {
-    currentQuestion++;
-    displayQuestion();
-  } else {
-    alert("This was the last Question of the Test");
-  }
-}
-
-function cbtSubmitTest() {
-  var btn = document.querySelector('#quizForm button[type="submit"]');
-  if (btn) { btn.click(); }
-}
 </script>
-<!-- ===== END CBT MODE keypad ===== -->
+
 
   <div id="quiz">
     <center>
@@ -1628,8 +1334,6 @@ document.addEventListener('DOMContentLoaded', function() {
       opt.style.display = "inline-block";
 
       startTime = new Date();
-      var cbtKeypad = document.getElementById('cbt-keypad');
-      if (cbtKeypad) cbtKeypad.classList.add('active');
       displayQuestion();
 
       var timerMinutes = parseInt(document.getElementById("timer-minutes").value);
@@ -1736,7 +1440,6 @@ function displayQuestion() {
     questionContainer.innerHTML = html;
     updateQuestionPalette();
     updateFlagIcon();
-    updateKeypad();
 }
 
 function toggleReviewFlag() {
@@ -2008,9 +1711,6 @@ function toggleReviewFlag() {
     document.getElementById('qpbox').style.display = 'block';
     document.getElementById('question-container').style.display = 'block';
     document.getElementById('optt').style.display = 'inline-block';
-    var cbtKeypad = document.getElementById('cbt-keypad');
-    if (cbtKeypad) cbtKeypad.classList.add('active');
-
     startTime = new Date();
     displayQuestion();
 
