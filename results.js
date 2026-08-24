@@ -58,15 +58,33 @@ function submitTestfinal(data) {
     body: JSON.stringify(data)
   })
   .then(response => {
-    if (!response.ok) {
-      throw new Error('Server returned ' + response.status + ' ' + response.statusText);
-    }
-    return response.json();
+    // Read as raw text first so we can show the ACTUAL server response
+    // (instead of a generic "Unexpected token" message) when it isn't JSON.
+    return response.text().then(rawText => {
+      var parsed;
+      try {
+        parsed = JSON.parse(rawText);
+      } catch (parseErr) {
+        var snippet = rawText.replace(/\s+/g, ' ').trim().slice(0, 220);
+        throw new Error(
+          'Server ne JSON ki jagah kuch aur bheja (HTTP ' + response.status + '). ' +
+          'Server response: "' + (snippet || '(empty response)') + '"'
+        );
+      }
+
+      if (!response.ok) {
+        var serverMsg = (parsed && (parsed.message || parsed.error)) || JSON.stringify(parsed);
+        throw new Error('Server error (HTTP ' + response.status + '): ' + serverMsg);
+      }
+
+      if (!parsed || typeof parsed.result === 'undefined') {
+        throw new Error('Server response did not include a "result" field.');
+      }
+
+      return parsed;
+    });
   })
   .then(result => {
-    if (!result || typeof result.result === 'undefined') {
-      throw new Error('Server response did not include a result.');
-    }
     displayResult(result.result, result.message); // Display result here
   })
   .catch(error => {
@@ -78,6 +96,12 @@ function submitTestfinal(data) {
 
 // Shows a clear, dismissable error instead of leaving "Generating result..."
 // spinning forever, and lets the user retry the submission.
+function escapeHtml(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
 function showSubmissionError(error) {
   var overlay = document.getElementById('overlay');
   var loading = document.getElementById('loading');
@@ -91,13 +115,19 @@ function showSubmissionError(error) {
   popup.id = 'submission-error-popup';
   popup.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);' +
     'background:#fff;padding:20px 24px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.25);' +
-    'z-index:2000;max-width:90%;width:360px;text-align:center;font-family:Inter,system-ui,sans-serif;';
+    'z-index:2000;max-width:90%;width:380px;max-height:80vh;overflow-y:auto;' +
+    'text-align:center;font-family:Inter,system-ui,sans-serif;';
   popup.innerHTML =
     '<p style="color:#c62828;font-weight:600;margin:0 0 8px;">Result generate nahi ho paaya</p>' +
-    '<p style="color:#555;font-size:14px;margin:0 0 16px;">' +
-      'Server se result nahi mila (' + (error && error.message ? error.message : 'unknown error') + '). ' +
-      'Internet check karein aur dobara try karein.' +
+    '<p style="color:#555;font-size:14px;margin:0 0 10px;">' +
+      'Internet check karein aur dobara try karein. Agar problem bani rahe to neeche di gayi ' +
+      'technical detail backend developer ko dikhayein:' +
     '</p>' +
+    '<pre style="text-align:left;background:#f5f5f5;border:1px solid #e0e0e0;border-radius:6px;' +
+      'padding:8px 10px;font-size:11px;line-height:1.4;color:#333;white-space:pre-wrap;' +
+      'word-break:break-word;max-height:180px;overflow-y:auto;margin:0 0 16px;">' +
+      (error && error.message ? escapeHtml(error.message) : 'unknown error') +
+    '</pre>' +
     '<button id="submission-error-retry" style="background:#1976d2;color:#fff;border:none;' +
       'padding:10px 20px;border-radius:8px;font-weight:600;cursor:pointer;margin-right:8px;">Retry</button>' +
     '<button id="submission-error-close" style="background:#eee;color:#333;border:none;' +
