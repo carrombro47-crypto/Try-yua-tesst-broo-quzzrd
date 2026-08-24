@@ -50,7 +50,7 @@ function showResult() {
 
 // Function to submit test data and handle response
 function submitTestfinal(data) {
-  return fetch('/submit-test', {
+  return fetch('/submit-quiz', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
